@@ -1,0 +1,799 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.example.demo.UserServiceTest" time="6.066" tests="8" errors="8" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="GBK"/>
+    <property name="java.class.path" value="C:\Users\prakTY\Documents\Trae\SpringBoot3.0学习\data-access-cache-demo\target\test-classes;C:\Users\prakTY\Documents\Trae\SpringBoot3.0学习\data-access-cache-demo\target\classes;D:\HuaWei\apache-maven-3.9.12\Repository\org\springframework\boot\spring-boot-starter-web\3.0.0\spring-boot-starter-web-3.0.0.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\springframework\boot\spring-boot-starter\3.0.0\spring-boot-starter-3.0.0.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\springframework\boot\spring-boot\3.0.0\spring-boot-3.0.0.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\springframework\boot\spring-boot-autoconfigure\3.0.0\spring-boot-autoconfigure-3.0.0.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\springframework\boot\spring-boot-starter-logging\3.0.0\spring-boot-starter-logging-3.0.0.jar;D:\HuaWei\apache-maven-3.9.12\Repository\ch\qos\logback\logback-classic\1.4.5\logback-classic-1.4.5.jar;D:\HuaWei\apache-maven-3.9.12\Repository\ch\qos\logback\logback-core\1.4.5\logback-core-1.4.5.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\apache\logging\log4j\log4j-to-slf4j\2.19.0\log4j-to-slf4j-2.19.0.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\apache\logging\log4j\log4j-api\2.19.0\log4j-api-2.19.0.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\slf4j\jul-to-slf4j\2.0.4\jul-to-slf4j-2.0.4.jar;D:\HuaWei\apache-maven-3.9.12\Repository\jakarta\annotation\jakarta.annotation-api\2.1.1\jakarta.annotation-api-2.1.1.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\yaml\snakeyaml\1.33\snakeyaml-1.33.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\springframework\boot\spring-boot-starter-json\3.0.0\spring-boot-starter-json-3.0.0.jar;D:\HuaWei\apache-maven-3.9.12\Repository\com\fasterxml\jackson\core\jackson-databind\2.14.1\jackson-databind-2.14.1.jar;D:\HuaWei\apache-maven-3.9.12\Repository\com\fasterxml\jackson\core\jackson-annotations\2.14.1\jackson-annotations-2.14.1.jar;D:\HuaWei\apache-maven-3.9.12\Repository\com\fasterxml\jackson\core\jackson-core\2.14.1\jackson-core-2.14.1.jar;D:\HuaWei\apache-maven-3.9.12\Repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.14.1\jackson-datatype-jdk8-2.14.1.jar;D:\HuaWei\apache-maven-3.9.12\Repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.14.1\jackson-datatype-jsr310-2.14.1.jar;D:\HuaWei\apache-maven-3.9.12\Repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.14.1\jackson-module-parameter-names-2.14.1.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\springframework\boot\spring-boot-starter-tomcat\3.0.0\spring-boot-starter-tomcat-3.0.0.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\apache\tomcat\embed\tomcat-embed-core\10.1.1\tomcat-embed-core-10.1.1.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\apache\tomcat\embed\tomcat-embed-websocket\10.1.1\tomcat-embed-websocket-10.1.1.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\springframework\spring-web\6.0.2\spring-web-6.0.2.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\springframework\spring-beans\6.0.2\spring-beans-6.0.2.jar;D:\HuaWei\apache-maven-3.9.12\Repository\io\micrometer\micrometer-observation\1.10.2\micrometer-observation-1.10.2.jar;D:\HuaWei\apache-maven-3.9.12\Repository\io\micrometer\micrometer-commons\1.10.2\micrometer-commons-1.10.2.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\springframework\spring-webmvc\6.0.2\spring-webmvc-6.0.2.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\springframework\spring-aop\6.0.2\spring-aop-6.0.2.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\springframework\spring-context\6.0.2\spring-context-6.0.2.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\springframework\spring-expression\6.0.2\spring-expression-6.0.2.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\springframework\boot\spring-boot-starter-data-jpa\3.0.0\spring-boot-starter-data-jpa-3.0.0.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\springframework\boot\spring-boot-starter-aop\3.0.0\spring-boot-starter-aop-3.0.0.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\aspectj\aspectjweaver\1.9.9.1\aspectjweaver-1.9.9.1.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\springframework\boot\spring-boot-starter-jdbc\3.0.0\spring-boot-starter-jdbc-3.0.0.jar;D:\HuaWei\apache-maven-3.9.12\Repository\com\zaxxer\HikariCP\5.0.1\HikariCP-5.0.1.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\springframework\spring-jdbc\6.0.2\spring-jdbc-6.0.2.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\hibernate\orm\hibernate-core\6.1.5.Final\hibernate-core-6.1.5.Final.jar;D:\HuaWei\apache-maven-3.9.12\Repository\jakarta\persistence\jakarta.persistence-api\3.1.0\jakarta.persistence-api-3.1.0.jar;D:\HuaWei\apache-maven-3.9.12\Repository\jakarta\transaction\jakarta.transaction-api\2.0.1\jakarta.transaction-api-2.0.1.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\jboss\logging\jboss-logging\3.5.0.Final\jboss-logging-3.5.0.Final.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\hibernate\common\hibernate-commons-annotations\6.0.2.Final\hibernate-commons-annotations-6.0.2.Final.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\jboss\jandex\2.4.2.Final\jandex-2.4.2.Final.jar;D:\HuaWei\apache-maven-3.9.12\Repository\com\fasterxml\classmate\1.5.1\classmate-1.5.1.jar;D:\HuaWei\apache-maven-3.9.12\Repository\net\bytebuddy\byte-buddy\1.12.19\byte-buddy-1.12.19.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\glassfish\jaxb\jaxb-runtime\4.0.1\jaxb-runtime-4.0.1.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\glassfish\jaxb\jaxb-core\4.0.1\jaxb-core-4.0.1.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\eclipse\angus\angus-activation\1.0.0\angus-activation-1.0.0.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\glassfish\jaxb\txw2\4.0.1\txw2-4.0.1.jar;D:\HuaWei\apache-maven-3.9.12\Repository\com\sun\istack\istack-commons-runtime\4.1.1\istack-commons-runtime-4.1.1.jar;D:\HuaWei\apache-maven-3.9.12\Repository\jakarta\inject\jakarta.inject-api\2.0.0\jakarta.inject-api-2.0.0.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\antlr\antlr4-runtime\4.10.1\antlr4-runtime-4.10.1.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\springframework\data\spring-data-jpa\3.0.0\spring-data-jpa-3.0.0.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\springframework\data\spring-data-commons\3.0.0\spring-data-commons-3.0.0.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\springframework\spring-orm\6.0.2\spring-orm-6.0.2.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\springframework\spring-tx\6.0.2\spring-tx-6.0.2.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\slf4j\slf4j-api\2.0.4\slf4j-api-2.0.4.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\springframework\spring-aspects\6.0.2\spring-aspects-6.0.2.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\springframework\boot\spring-boot-starter-data-mongodb\3.0.0\spring-boot-starter-data-mongodb-3.0.0.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\mongodb\mongodb-driver-sync\4.8.0\mongodb-driver-sync-4.8.0.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\mongodb\bson\4.8.0\bson-4.8.0.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\mongodb\mongodb-driver-core\4.8.0\mongodb-driver-core-4.8.0.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\mongodb\bson-record-codec\4.8.0\bson-record-codec-4.8.0.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\springframework\data\spring-data-mongodb\4.0.0\spring-data-mongodb-4.0.0.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\springframework\boot\spring-boot-starter-data-redis\3.0.0\spring-boot-starter-data-redis-3.0.0.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\springframework\data\spring-data-redis\3.0.0\spring-data-redis-3.0.0.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\springframework\data\spring-data-keyvalue\3.0.0\spring-data-keyvalue-3.0.0.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\springframework\spring-oxm\6.0.2\spring-oxm-6.0.2.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\springframework\spring-context-support\6.0.2\spring-context-support-6.0.2.jar;D:\HuaWei\apache-maven-3.9.12\Repository\io\lettuce\lettuce-core\6.2.1.RELEASE\lettuce-core-6.2.1.RELEASE.jar;D:\HuaWei\apache-maven-3.9.12\Repository\io\netty\netty-common\4.1.85.Final\netty-common-4.1.85.Final.jar;D:\HuaWei\apache-maven-3.9.12\Repository\io\netty\netty-handler\4.1.85.Final\netty-handler-4.1.85.Final.jar;D:\HuaWei\apache-maven-3.9.12\Repository\io\netty\netty-resolver\4.1.85.Final\netty-resolver-4.1.85.Final.jar;D:\HuaWei\apache-maven-3.9.12\Repository\io\netty\netty-buffer\4.1.85.Final\netty-buffer-4.1.85.Final.jar;D:\HuaWei\apache-maven-3.9.12\Repository\io\netty\netty-transport-native-unix-common\4.1.85.Final\netty-transport-native-unix-common-4.1.85.Final.jar;D:\HuaWei\apache-maven-3.9.12\Repository\io\netty\netty-codec\4.1.85.Final\netty-codec-4.1.85.Final.jar;D:\HuaWei\apache-maven-3.9.12\Repository\io\netty\netty-transport\4.1.85.Final\netty-transport-4.1.85.Final.jar;D:\HuaWei\apache-maven-3.9.12\Repository\io\projectreactor\reactor-core\3.5.0\reactor-core-3.5.0.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\mybatis\spring\boot\mybatis-spring-boot-starter\3.0.3\mybatis-spring-boot-starter-3.0.3.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\mybatis\spring\boot\mybatis-spring-boot-autoconfigure\3.0.3\mybatis-spring-boot-autoconfigure-3.0.3.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\mybatis\mybatis\3.5.14\mybatis-3.5.14.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\mybatis\mybatis-spring\3.0.3\mybatis-spring-3.0.3.jar;D:\HuaWei\apache-maven-3.9.12\Repository\com\github\pagehelper\pagehelper-spring-boot-starter\2.0.0\pagehelper-spring-boot-starter-2.0.0.jar;D:\HuaWei\apache-maven-3.9.12\Repository\com\github\pagehelper\pagehelper-spring-boot-autoconfigure\2.0.0\pagehelper-spring-boot-autoconfigure-2.0.0.jar;D:\HuaWei\apache-maven-3.9.12\Repository\com\github\pagehelper\pagehelper\6.0.0\pagehelper-6.0.0.jar;D:\HuaWei\apache-maven-3.9.12\Repository\com\github\jsqlparser\jsqlparser\4.5\jsqlparser-4.5.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\projectlombok\lombok\1.18.24\lombok-1.18.24.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\springframework\boot\spring-boot-starter-validation\3.0.0\spring-boot-starter-validation-3.0.0.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\apache\tomcat\embed\tomcat-embed-el\10.1.1\tomcat-embed-el-10.1.1.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\hibernate\validator\hibernate-validator\8.0.0.Final\hibernate-validator-8.0.0.Final.jar;D:\HuaWei\apache-maven-3.9.12\Repository\jakarta\validation\jakarta.validation-api\3.0.2\jakarta.validation-api-3.0.2.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\springframework\boot\spring-boot-starter-test\3.0.0\spring-boot-starter-test-3.0.0.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\springframework\boot\spring-boot-test\3.0.0\spring-boot-test-3.0.0.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\springframework\boot\spring-boot-test-autoconfigure\3.0.0\spring-boot-test-autoconfigure-3.0.0.jar;D:\HuaWei\apache-maven-3.9.12\Repository\com\jayway\jsonpath\json-path\2.7.0\json-path-2.7.0.jar;D:\HuaWei\apache-maven-3.9.12\Repository\net\minidev\json-smart\2.4.8\json-smart-2.4.8.jar;D:\HuaWei\apache-maven-3.9.12\Repository\net\minidev\accessors-smart\2.4.8\accessors-smart-2.4.8.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\ow2\asm\asm\9.1\asm-9.1.jar;D:\HuaWei\apache-maven-3.9.12\Repository\jakarta\xml\bind\jakarta.xml.bind-api\4.0.0\jakarta.xml.bind-api-4.0.0.jar;D:\HuaWei\apache-maven-3.9.12\Repository\jakarta\activation\jakarta.activation-api\2.1.0\jakarta.activation-api-2.1.0.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\assertj\assertj-core\3.23.1\assertj-core-3.23.1.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\junit\jupiter\junit-jupiter\5.9.1\junit-jupiter-5.9.1.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\junit\jupiter\junit-jupiter-api\5.9.1\junit-jupiter-api-5.9.1.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\junit\platform\junit-platform-commons\1.9.1\junit-platform-commons-1.9.1.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\junit\jupiter\junit-jupiter-params\5.9.1\junit-jupiter-params-5.9.1.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\junit\jupiter\junit-jupiter-engine\5.9.1\junit-jupiter-engine-5.9.1.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\junit\platform\junit-platform-engine\1.9.1\junit-platform-engine-1.9.1.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\mockito\mockito-core\4.8.1\mockito-core-4.8.1.jar;D:\HuaWei\apache-maven-3.9.12\Repository\net\bytebuddy\byte-buddy-agent\1.12.19\byte-buddy-agent-1.12.19.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\objenesis\objenesis\3.2\objenesis-3.2.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\mockito\mockito-junit-jupiter\4.8.1\mockito-junit-jupiter-4.8.1.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\skyscreamer\jsonassert\1.5.1\jsonassert-1.5.1.jar;D:\HuaWei\apache-maven-3.9.12\Repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\springframework\spring-core\6.0.2\spring-core-6.0.2.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\springframework\spring-jcl\6.0.2\spring-jcl-6.0.2.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\springframework\spring-test\6.0.2\spring-test-6.0.2.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\xmlunit\xmlunit-core\2.9.0\xmlunit-core-2.9.0.jar;D:\HuaWei\apache-maven-3.9.12\Repository\com\h2database\h2\2.1.214\h2-2.1.214.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Shanghai"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="CN"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17\bin"/>
+    <property name="sun.java.command" value="C:\Users\prakTY\AppData\Local\Temp\surefire74788006179287436\surefirebooter9566418970322700568.jar C:\Users\prakTY\AppData\Local\Temp\surefire74788006179287436 2026-03-14T23-41-59_868-jvmRun1 surefire13019888712143365165tmp surefire_014541943151484977966tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="test" value="UserServiceTest"/>
+    <property name="surefire.test.class.path" value="C:\Users\prakTY\Documents\Trae\SpringBoot3.0学习\data-access-cache-demo\target\test-classes;C:\Users\prakTY\Documents\Trae\SpringBoot3.0学习\data-access-cache-demo\target\classes;D:\HuaWei\apache-maven-3.9.12\Repository\org\springframework\boot\spring-boot-starter-web\3.0.0\spring-boot-starter-web-3.0.0.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\springframework\boot\spring-boot-starter\3.0.0\spring-boot-starter-3.0.0.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\springframework\boot\spring-boot\3.0.0\spring-boot-3.0.0.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\springframework\boot\spring-boot-autoconfigure\3.0.0\spring-boot-autoconfigure-3.0.0.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\springframework\boot\spring-boot-starter-logging\3.0.0\spring-boot-starter-logging-3.0.0.jar;D:\HuaWei\apache-maven-3.9.12\Repository\ch\qos\logback\logback-classic\1.4.5\logback-classic-1.4.5.jar;D:\HuaWei\apache-maven-3.9.12\Repository\ch\qos\logback\logback-core\1.4.5\logback-core-1.4.5.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\apache\logging\log4j\log4j-to-slf4j\2.19.0\log4j-to-slf4j-2.19.0.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\apache\logging\log4j\log4j-api\2.19.0\log4j-api-2.19.0.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\slf4j\jul-to-slf4j\2.0.4\jul-to-slf4j-2.0.4.jar;D:\HuaWei\apache-maven-3.9.12\Repository\jakarta\annotation\jakarta.annotation-api\2.1.1\jakarta.annotation-api-2.1.1.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\yaml\snakeyaml\1.33\snakeyaml-1.33.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\springframework\boot\spring-boot-starter-json\3.0.0\spring-boot-starter-json-3.0.0.jar;D:\HuaWei\apache-maven-3.9.12\Repository\com\fasterxml\jackson\core\jackson-databind\2.14.1\jackson-databind-2.14.1.jar;D:\HuaWei\apache-maven-3.9.12\Repository\com\fasterxml\jackson\core\jackson-annotations\2.14.1\jackson-annotations-2.14.1.jar;D:\HuaWei\apache-maven-3.9.12\Repository\com\fasterxml\jackson\core\jackson-core\2.14.1\jackson-core-2.14.1.jar;D:\HuaWei\apache-maven-3.9.12\Repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.14.1\jackson-datatype-jdk8-2.14.1.jar;D:\HuaWei\apache-maven-3.9.12\Repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.14.1\jackson-datatype-jsr310-2.14.1.jar;D:\HuaWei\apache-maven-3.9.12\Repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.14.1\jackson-module-parameter-names-2.14.1.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\springframework\boot\spring-boot-starter-tomcat\3.0.0\spring-boot-starter-tomcat-3.0.0.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\apache\tomcat\embed\tomcat-embed-core\10.1.1\tomcat-embed-core-10.1.1.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\apache\tomcat\embed\tomcat-embed-websocket\10.1.1\tomcat-embed-websocket-10.1.1.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\springframework\spring-web\6.0.2\spring-web-6.0.2.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\springframework\spring-beans\6.0.2\spring-beans-6.0.2.jar;D:\HuaWei\apache-maven-3.9.12\Repository\io\micrometer\micrometer-observation\1.10.2\micrometer-observation-1.10.2.jar;D:\HuaWei\apache-maven-3.9.12\Repository\io\micrometer\micrometer-commons\1.10.2\micrometer-commons-1.10.2.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\springframework\spring-webmvc\6.0.2\spring-webmvc-6.0.2.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\springframework\spring-aop\6.0.2\spring-aop-6.0.2.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\springframework\spring-context\6.0.2\spring-context-6.0.2.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\springframework\spring-expression\6.0.2\spring-expression-6.0.2.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\springframework\boot\spring-boot-starter-data-jpa\3.0.0\spring-boot-starter-data-jpa-3.0.0.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\springframework\boot\spring-boot-starter-aop\3.0.0\spring-boot-starter-aop-3.0.0.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\aspectj\aspectjweaver\1.9.9.1\aspectjweaver-1.9.9.1.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\springframework\boot\spring-boot-starter-jdbc\3.0.0\spring-boot-starter-jdbc-3.0.0.jar;D:\HuaWei\apache-maven-3.9.12\Repository\com\zaxxer\HikariCP\5.0.1\HikariCP-5.0.1.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\springframework\spring-jdbc\6.0.2\spring-jdbc-6.0.2.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\hibernate\orm\hibernate-core\6.1.5.Final\hibernate-core-6.1.5.Final.jar;D:\HuaWei\apache-maven-3.9.12\Repository\jakarta\persistence\jakarta.persistence-api\3.1.0\jakarta.persistence-api-3.1.0.jar;D:\HuaWei\apache-maven-3.9.12\Repository\jakarta\transaction\jakarta.transaction-api\2.0.1\jakarta.transaction-api-2.0.1.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\jboss\logging\jboss-logging\3.5.0.Final\jboss-logging-3.5.0.Final.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\hibernate\common\hibernate-commons-annotations\6.0.2.Final\hibernate-commons-annotations-6.0.2.Final.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\jboss\jandex\2.4.2.Final\jandex-2.4.2.Final.jar;D:\HuaWei\apache-maven-3.9.12\Repository\com\fasterxml\classmate\1.5.1\classmate-1.5.1.jar;D:\HuaWei\apache-maven-3.9.12\Repository\net\bytebuddy\byte-buddy\1.12.19\byte-buddy-1.12.19.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\glassfish\jaxb\jaxb-runtime\4.0.1\jaxb-runtime-4.0.1.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\glassfish\jaxb\jaxb-core\4.0.1\jaxb-core-4.0.1.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\eclipse\angus\angus-activation\1.0.0\angus-activation-1.0.0.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\glassfish\jaxb\txw2\4.0.1\txw2-4.0.1.jar;D:\HuaWei\apache-maven-3.9.12\Repository\com\sun\istack\istack-commons-runtime\4.1.1\istack-commons-runtime-4.1.1.jar;D:\HuaWei\apache-maven-3.9.12\Repository\jakarta\inject\jakarta.inject-api\2.0.0\jakarta.inject-api-2.0.0.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\antlr\antlr4-runtime\4.10.1\antlr4-runtime-4.10.1.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\springframework\data\spring-data-jpa\3.0.0\spring-data-jpa-3.0.0.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\springframework\data\spring-data-commons\3.0.0\spring-data-commons-3.0.0.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\springframework\spring-orm\6.0.2\spring-orm-6.0.2.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\springframework\spring-tx\6.0.2\spring-tx-6.0.2.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\slf4j\slf4j-api\2.0.4\slf4j-api-2.0.4.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\springframework\spring-aspects\6.0.2\spring-aspects-6.0.2.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\springframework\boot\spring-boot-starter-data-mongodb\3.0.0\spring-boot-starter-data-mongodb-3.0.0.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\mongodb\mongodb-driver-sync\4.8.0\mongodb-driver-sync-4.8.0.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\mongodb\bson\4.8.0\bson-4.8.0.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\mongodb\mongodb-driver-core\4.8.0\mongodb-driver-core-4.8.0.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\mongodb\bson-record-codec\4.8.0\bson-record-codec-4.8.0.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\springframework\data\spring-data-mongodb\4.0.0\spring-data-mongodb-4.0.0.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\springframework\boot\spring-boot-starter-data-redis\3.0.0\spring-boot-starter-data-redis-3.0.0.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\springframework\data\spring-data-redis\3.0.0\spring-data-redis-3.0.0.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\springframework\data\spring-data-keyvalue\3.0.0\spring-data-keyvalue-3.0.0.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\springframework\spring-oxm\6.0.2\spring-oxm-6.0.2.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\springframework\spring-context-support\6.0.2\spring-context-support-6.0.2.jar;D:\HuaWei\apache-maven-3.9.12\Repository\io\lettuce\lettuce-core\6.2.1.RELEASE\lettuce-core-6.2.1.RELEASE.jar;D:\HuaWei\apache-maven-3.9.12\Repository\io\netty\netty-common\4.1.85.Final\netty-common-4.1.85.Final.jar;D:\HuaWei\apache-maven-3.9.12\Repository\io\netty\netty-handler\4.1.85.Final\netty-handler-4.1.85.Final.jar;D:\HuaWei\apache-maven-3.9.12\Repository\io\netty\netty-resolver\4.1.85.Final\netty-resolver-4.1.85.Final.jar;D:\HuaWei\apache-maven-3.9.12\Repository\io\netty\netty-buffer\4.1.85.Final\netty-buffer-4.1.85.Final.jar;D:\HuaWei\apache-maven-3.9.12\Repository\io\netty\netty-transport-native-unix-common\4.1.85.Final\netty-transport-native-unix-common-4.1.85.Final.jar;D:\HuaWei\apache-maven-3.9.12\Repository\io\netty\netty-codec\4.1.85.Final\netty-codec-4.1.85.Final.jar;D:\HuaWei\apache-maven-3.9.12\Repository\io\netty\netty-transport\4.1.85.Final\netty-transport-4.1.85.Final.jar;D:\HuaWei\apache-maven-3.9.12\Repository\io\projectreactor\reactor-core\3.5.0\reactor-core-3.5.0.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\mybatis\spring\boot\mybatis-spring-boot-starter\3.0.3\mybatis-spring-boot-starter-3.0.3.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\mybatis\spring\boot\mybatis-spring-boot-autoconfigure\3.0.3\mybatis-spring-boot-autoconfigure-3.0.3.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\mybatis\mybatis\3.5.14\mybatis-3.5.14.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\mybatis\mybatis-spring\3.0.3\mybatis-spring-3.0.3.jar;D:\HuaWei\apache-maven-3.9.12\Repository\com\github\pagehelper\pagehelper-spring-boot-starter\2.0.0\pagehelper-spring-boot-starter-2.0.0.jar;D:\HuaWei\apache-maven-3.9.12\Repository\com\github\pagehelper\pagehelper-spring-boot-autoconfigure\2.0.0\pagehelper-spring-boot-autoconfigure-2.0.0.jar;D:\HuaWei\apache-maven-3.9.12\Repository\com\github\pagehelper\pagehelper\6.0.0\pagehelper-6.0.0.jar;D:\HuaWei\apache-maven-3.9.12\Repository\com\github\jsqlparser\jsqlparser\4.5\jsqlparser-4.5.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\projectlombok\lombok\1.18.24\lombok-1.18.24.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\springframework\boot\spring-boot-starter-validation\3.0.0\spring-boot-starter-validation-3.0.0.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\apache\tomcat\embed\tomcat-embed-el\10.1.1\tomcat-embed-el-10.1.1.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\hibernate\validator\hibernate-validator\8.0.0.Final\hibernate-validator-8.0.0.Final.jar;D:\HuaWei\apache-maven-3.9.12\Repository\jakarta\validation\jakarta.validation-api\3.0.2\jakarta.validation-api-3.0.2.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\springframework\boot\spring-boot-starter-test\3.0.0\spring-boot-starter-test-3.0.0.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\springframework\boot\spring-boot-test\3.0.0\spring-boot-test-3.0.0.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\springframework\boot\spring-boot-test-autoconfigure\3.0.0\spring-boot-test-autoconfigure-3.0.0.jar;D:\HuaWei\apache-maven-3.9.12\Repository\com\jayway\jsonpath\json-path\2.7.0\json-path-2.7.0.jar;D:\HuaWei\apache-maven-3.9.12\Repository\net\minidev\json-smart\2.4.8\json-smart-2.4.8.jar;D:\HuaWei\apache-maven-3.9.12\Repository\net\minidev\accessors-smart\2.4.8\accessors-smart-2.4.8.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\ow2\asm\asm\9.1\asm-9.1.jar;D:\HuaWei\apache-maven-3.9.12\Repository\jakarta\xml\bind\jakarta.xml.bind-api\4.0.0\jakarta.xml.bind-api-4.0.0.jar;D:\HuaWei\apache-maven-3.9.12\Repository\jakarta\activation\jakarta.activation-api\2.1.0\jakarta.activation-api-2.1.0.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\assertj\assertj-core\3.23.1\assertj-core-3.23.1.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\junit\jupiter\junit-jupiter\5.9.1\junit-jupiter-5.9.1.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\junit\jupiter\junit-jupiter-api\5.9.1\junit-jupiter-api-5.9.1.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\junit\platform\junit-platform-commons\1.9.1\junit-platform-commons-1.9.1.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\junit\jupiter\junit-jupiter-params\5.9.1\junit-jupiter-params-5.9.1.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\junit\jupiter\junit-jupiter-engine\5.9.1\junit-jupiter-engine-5.9.1.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\junit\platform\junit-platform-engine\1.9.1\junit-platform-engine-1.9.1.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\mockito\mockito-core\4.8.1\mockito-core-4.8.1.jar;D:\HuaWei\apache-maven-3.9.12\Repository\net\bytebuddy\byte-buddy-agent\1.12.19\byte-buddy-agent-1.12.19.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\objenesis\objenesis\3.2\objenesis-3.2.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\mockito\mockito-junit-jupiter\4.8.1\mockito-junit-jupiter-4.8.1.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\skyscreamer\jsonassert\1.5.1\jsonassert-1.5.1.jar;D:\HuaWei\apache-maven-3.9.12\Repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\springframework\spring-core\6.0.2\spring-core-6.0.2.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\springframework\spring-jcl\6.0.2\spring-jcl-6.0.2.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\springframework\spring-test\6.0.2\spring-test-6.0.2.jar;D:\HuaWei\apache-maven-3.9.12\Repository\org\xmlunit\xmlunit-core\2.9.0\xmlunit-core-2.9.0.jar;D:\HuaWei\apache-maven-3.9.12\Repository\com\h2database\h2\2.1.214\h2-2.1.214.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\prakTY"/>
+    <property name="user.language" value="zh"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-07-16"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-17"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\prakTY\Documents\Trae\SpringBoot3.0学习\data-access-cache-demo"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\prakTY\AppData\Local\Temp\surefire74788006179287436\surefirebooter9566418970322700568.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="17.0.12+8-LTS-286"/>
+    <property name="user.name" value="prakTY"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="GBK"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="D:\HuaWei\apache-maven-3.9.12\Repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\prakTY\AppData\Local\Temp\"/>
+    <property name="java.version" value="17.0.12"/>
+    <property name="user.dir" value="C:\Users\prakTY\Documents\Trae\SpringBoot3.0学习\data-access-cache-demo"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="GBK"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-17\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\\Program Files\\Java\\jdk-17\\bin;C:\\Users\\prakTY\\.trae-cn\\tools\\maven\\latest\\bin;C:\\Users\\prakTY\\.trae-cn\\tools\\gradle\\latest\\bin;c:\\Users\\prakTY\\.trae-cn\\tools\\trae-gopls\\current;c:\\Users\\prakTY\\.trae-cn\\sdks\\workspaces\\c17c880e\\versions\\node\\current;c:\\Users\\prakTY\\.trae-cn\\sdks\\versions\\node\\current;C:\Program Files\Java\jdk-17\bin;C:\Users\prakTY\.trae-cn\tools\maven\latest\bin;C:\Users\prakTY\.trae-cn\tools\gradle\latest\bin;c:\Users\prakTY\.trae-cn\tools\trae-gopls\current;c:\Users\prakTY\.trae-cn\sdks\workspaces\c17c880e\versions\node\current;c:\Users\prakTY\.trae-cn\sdks\versions\node\current;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files\Microsoft\jdk-21.0.8.9-hotspot\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Users\prakTY\AppData\Local\nvm;C:\nvm4w\nodejs;C:\Program Files\Docker\Docker\resources\bin;D:\Git\cmd;D:\HuaWei\apache-maven-3.9.12\bin;C:\Program Files\Java\jdk-17\bin;C:\Users\prakTY\Documents\Trae\.venv\Scripts;c:\\Users\\prakTY\\.trae-cn\\sdks\\workspaces\\15498d12\\versions\\node\\current;c:\\Users\\prakTY\\.trae-cn\\sdks\\versions\\node\\current;c:\Users\prakTY\.trae-cn\sdks\workspaces\15498d12\versions\node\current;c:\Users\prakTY\.trae-cn\sdks\versions\node\current;C:\Program Files\Microsoft\jdk-21.0.8.9-hotspot\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Users\prakTY\AppData\Local\nvm;C:\nvm4w\nodejs;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\Microsoft\jdk-21.0.8.9-hotspot\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Users\prakTY\AppData\Local\nvm;C:\nvm4w\nodejs;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\MySQL\MySQL Server 5.7\bin;C:\Program Files\MySQL\MySQL Server 5.7\bin;C:\Users\prakTY\AppData\Local\Programs\Python\Python313;C:\Users\prakTY\AppData\Local\Programs\Python\Python313\Scripts;C:\Users\prakTY\AppData\Local\Programs\Microsoft VS Code\bin;c:\Users\prakTY\.trae-cn\extensions\vscjava.vscode-java-debug-0.58.5-universal\bundled\scripts\noConfigScripts;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="17.0.12+8-LTS-286"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="testFindAllUsers" classname="com.example.demo.UserServiceTest" time="0.484">
+    <error message="could not prepare statement; SQL [select u1_0.id,u1_0.age,u1_0.created_at,u1_0.email,u1_0.updated_at,u1_0.username from User u1_0]" type="org.springframework.dao.InvalidDataAccessResourceUsageException">org.springframework.dao.InvalidDataAccessResourceUsageException: could not prepare statement; SQL [select u1_0.id,u1_0.age,u1_0.created_at,u1_0.email,u1_0.updated_at,u1_0.username from User u1_0]
+	at com.example.demo.UserServiceTest.setUp(UserServiceTest.java:31)
+Caused by: org.hibernate.exception.SQLGrammarException: could not prepare statement
+	at com.example.demo.UserServiceTest.setUp(UserServiceTest.java:31)
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: 
+Syntax error in SQL statement "select u1_0.id,u1_0.age,u1_0.created_at,u1_0.email,u1_0.updated_at,u1_0.username from [*]User u1_0"; expected "identifier"; SQL statement:
+select u1_0.id,u1_0.age,u1_0.created_at,u1_0.email,u1_0.updated_at,u1_0.username from User u1_0 [42001-214]
+	at com.example.demo.UserServiceTest.setUp(UserServiceTest.java:31)
+</error>
+    <system-out><![CDATA[23:42:00.635 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [UserServiceTest]: using SpringBootContextLoader
+23:42:00.638 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.example.demo.UserServiceTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+23:42:00.651 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using ContextCustomizers for test class [UserServiceTest]: [ExcludeFilterContextCustomizer, DuplicateJsonObjectContextCustomizer, MockitoContextCustomizer, TestRestTemplateContextCustomizer, DisableObservabilityContextCustomizer, PropertyMappingContextCustomizer, Customizer]
+23:42:00.746 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners for test class [UserServiceTest]: [ServletTestExecutionListener, DirtiesContextBeforeModesTestExecutionListener, ApplicationEventsTestExecutionListener, MockitoTestExecutionListener, DependencyInjectionTestExecutionListener, DirtiesContextTestExecutionListener, TransactionalTestExecutionListener, SqlScriptsTestExecutionListener, EventPublishingTestExecutionListener, ResetMocksTestExecutionListener, RestDocsTestExecutionListener, MockRestServiceServerResetTestExecutionListener, MockMvcPrintOnlyOnFailureTestExecutionListener, WebDriverTestExecutionListener, MockWebServiceServerTestExecutionListener]
+23:42:00.748 [main] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: class [UserServiceTest], class annotated with @DirtiesContext [false] with mode [null]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.0.0)
+
+2026-03-14T23:42:01.005+08:00  INFO 47820 --- [           main] com.example.demo.UserServiceTest         : Starting UserServiceTest using Java 17.0.12 with PID 47820 (started by prakTY in C:\Users\prakTY\Documents\Trae\SpringBoot3.0学习\data-access-cache-demo)
+2026-03-14T23:42:01.006+08:00 DEBUG 47820 --- [           main] com.example.demo.UserServiceTest         : Running with Spring Boot v3.0.0, Spring v6.0.2
+2026-03-14T23:42:01.007+08:00  INFO 47820 --- [           main] com.example.demo.UserServiceTest         : The following 1 profile is active: "test"
+2026-03-14T23:42:01.537+08:00  INFO 47820 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-03-14T23:42:01.537+08:00  INFO 47820 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-14T23:42:01.632+08:00  INFO 47820 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 88 ms. Found 1 JPA repository interfaces.
+2026-03-14T23:42:01.827+08:00  INFO 47820 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-03-14T23:42:01.828+08:00  INFO 47820 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2026-03-14T23:42:01.835+08:00  INFO 47820 --- [           main] .RepositoryConfigurationExtensionSupport : Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.UserRepository; If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository
+2026-03-14T23:42:01.841+08:00  INFO 47820 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13 ms. Found 1 MongoDB repository interfaces.
+2026-03-14T23:42:01.855+08:00  INFO 47820 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-03-14T23:42:01.858+08:00  INFO 47820 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-03-14T23:42:01.882+08:00  INFO 47820 --- [           main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.demo.mongo.repository.ProductRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-03-14T23:42:01.882+08:00  INFO 47820 --- [           main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-03-14T23:42:01.882+08:00  INFO 47820 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2026-03-14T23:42:02.477+08:00  INFO 47820 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-14T23:42:02.549+08:00  INFO 47820 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.5.Final
+2026-03-14T23:42:02.744+08:00  WARN 47820 --- [           main] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2026-03-14T23:42:02.915+08:00  INFO 47820 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-03-14T23:42:03.054+08:00  INFO 47820 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2026-03-14T23:42:03.054+08:00  INFO 47820 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-03-14T23:42:03.074+08:00  INFO 47820 --- [           main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2026-03-14T23:42:03.536+08:00 DEBUG 47820 --- [           main] org.hibernate.SQL                        : drop table if exists User
+Hibernate: drop table if exists User
+2026-03-14T23:42:03.537+08:00  WARN 47820 --- [           main] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "drop table if exists User" via JDBC Statement
+
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "drop table if exists User" via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67) ~[hibernate-core-6.1.5.Final.jar:6.1.5.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlString(SchemaDropperImpl.java:419) ~[hibernate-core-6.1.5.Final.jar:6.1.5.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlStrings(SchemaDropperImpl.java:403) ~[hibernate-core-6.1.5.Final.jar:6.1.5.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:272) ~[hibernate-core-6.1.5.Final.jar:6.1.5.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:178) ~[hibernate-core-6.1.5.Final.jar:6.1.5.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:149) ~[hibernate-core-6.1.5.Final.jar:6.1.5.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:117) ~[hibernate-core-6.1.5.Final.jar:6.1.5.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:242) ~[hibernate-core-6.1.5.Final.jar:6.1.5.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:143) ~[hibernate-core-6.1.5.Final.jar:6.1.5.Final]
+	at java.base/java.util.HashMap.forEach(HashMap.java:1421) ~[na:na]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:140) ~[hibernate-core-6.1.5.Final.jar:6.1.5.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:334) ~[hibernate-core-6.1.5.Final.jar:6.1.5.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:415) ~[hibernate-core-6.1.5.Final.jar:6.1.5.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1425) ~[hibernate-core-6.1.5.Final.jar:6.1.5.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66) ~[spring-orm-6.0.2.jar:6.0.2]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:376) ~[spring-orm-6.0.2.jar:6.0.2]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-6.0.2.jar:6.0.2]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-6.0.2.jar:6.0.2]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:352) ~[spring-orm-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1797) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1747) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:599) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1130) ~[spring-context-6.0.2.jar:6.0.2]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:905) ~[spring-context-6.0.2.jar:6.0.2]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:584) ~[spring-context-6.0.2.jar:6.0.2]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730) ~[spring-boot-3.0.0.jar:3.0.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:432) ~[spring-boot-3.0.0.jar:3.0.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) ~[spring-boot-3.0.0.jar:3.0.0]
+	at org.springframework.boot.test.context.SpringBootContextLoader.lambda$loadContext$3(SpringBootContextLoader.java:137) ~[spring-boot-test-3.0.0.jar:3.0.0]
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:59) ~[spring-core-6.0.2.jar:6.0.2]
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:47) ~[spring-core-6.0.2.jar:6.0.2]
+	at org.springframework.boot.SpringApplication.withHook(SpringApplication.java:1386) ~[spring-boot-3.0.0.jar:3.0.0]
+	at org.springframework.boot.test.context.SpringBootContextLoader$ContextLoaderHook.run(SpringBootContextLoader.java:543) ~[spring-boot-test-3.0.0.jar:3.0.0]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:137) ~[spring-boot-test-3.0.0.jar:3.0.0]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:108) ~[spring-boot-test-3.0.0.jar:3.0.0]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:183) ~[spring-test-6.0.2.jar:6.0.2]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117) ~[spring-test-6.0.2.jar:6.0.2]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:127) ~[spring-test-6.0.2.jar:6.0.2]
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:192) ~[spring-test-6.0.2.jar:6.0.2]
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:131) ~[spring-test-6.0.2.jar:6.0.2]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:249) ~[spring-test-6.0.2.jar:6.0.2]
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:138) ~[spring-test-6.0.2.jar:6.0.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$10(ClassBasedTestDescriptor.java:377) ~[junit-jupiter-engine-5.9.1.jar:5.9.1]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:382) ~[junit-jupiter-engine-5.9.1.jar:5.9.1]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$11(ClassBasedTestDescriptor.java:377) ~[junit-jupiter-engine-5.9.1.jar:5.9.1]
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179) ~[na:na]
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[na:na]
+	at java.base/java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:310) ~[na:na]
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:735) ~[na:na]
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:734) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762) ~[na:na]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:376) ~[junit-jupiter-engine-5.9.1.jar:5.9.1]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$6(ClassBasedTestDescriptor.java:289) ~[junit-jupiter-engine-5.9.1.jar:5.9.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.9.1.jar:1.9.1]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:288) ~[junit-jupiter-engine-5.9.1.jar:5.9.1]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$4(ClassBasedTestDescriptor.java:278) ~[junit-jupiter-engine-5.9.1.jar:5.9.1]
+	at java.base/java.util.Optional.orElseGet(Optional.java:364) ~[na:na]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:277) ~[junit-jupiter-engine-5.9.1.jar:5.9.1]
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31) ~[junit-jupiter-engine-5.9.1.jar:5.9.1]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:105) ~[junit-jupiter-engine-5.9.1.jar:5.9.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.9.1.jar:1.9.1]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:104) ~[junit-jupiter-engine-5.9.1.jar:5.9.1]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:68) ~[junit-jupiter-engine-5.9.1.jar:5.9.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:123) ~[junit-platform-engine-1.9.1.jar:1.9.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.9.1.jar:1.9.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:123) ~[junit-platform-engine-1.9.1.jar:1.9.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:90) ~[junit-platform-engine-1.9.1.jar:1.9.1]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) ~[na:na]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.9.1.jar:1.9.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine-1.9.1.jar:1.9.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.9.1.jar:1.9.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.9.1.jar:1.9.1]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.9.1.jar:1.9.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.9.1.jar:1.9.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.9.1.jar:1.9.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.9.1.jar:1.9.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.9.1.jar:1.9.1]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) ~[na:na]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.9.1.jar:1.9.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine-1.9.1.jar:1.9.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.9.1.jar:1.9.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.9.1.jar:1.9.1]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.9.1.jar:1.9.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.9.1.jar:1.9.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.9.1.jar:1.9.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.9.1.jar:1.9.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.9.1.jar:1.9.1]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35) ~[junit-platform-engine-1.9.1.jar:1.9.1]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) ~[junit-platform-engine-1.9.1.jar:1.9.1]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54) ~[junit-platform-engine-1.9.1.jar:1.9.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:220) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$6(DefaultLauncher.java:188) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:202) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:181) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:128) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:150) ~[surefire-junit-platform-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:124) ~[surefire-junit-platform-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384) ~[surefire-booter-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345) ~[surefire-booter-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126) ~[surefire-booter-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418) ~[surefire-booter-2.22.2.jar:2.22.2]
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "drop table if exists [*]User"; expected "identifier"; SQL statement:
+drop table if exists User [42001-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.message.DbException.getSyntaxError(DbException.java:261) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.command.Parser.readIdentifier(Parser.java:5656) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.command.Parser.readIdentifierWithSchema(Parser.java:5616) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.command.Parser.readIdentifierWithSchema(Parser.java:5645) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.command.Parser.parseDrop(Parser.java:2188) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.command.Parser.parsePrepared(Parser.java:776) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.command.Parser.parse(Parser.java:689) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.command.Parser.parse(Parser.java:661) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.command.Parser.prepareCommand(Parser.java:569) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:631) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:554) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:237) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:223) ~[h2-2.1.214.jar:2.1.214]
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94) ~[HikariCP-5.0.1.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-5.0.1.jar:na]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54) ~[hibernate-core-6.1.5.Final.jar:6.1.5.Final]
+	... 108 common frames omitted
+
+2026-03-14T23:42:03.546+08:00 DEBUG 47820 --- [           main] org.hibernate.SQL                        : create table User (id bigint not null auto_increment, age integer not null, created_at datetime, email varchar(100) not null, updated_at datetime, username varchar(50) not null, primary key (id)) type=MyISAM
+Hibernate: create table User (id bigint not null auto_increment, age integer not null, created_at datetime, email varchar(100) not null, updated_at datetime, username varchar(50) not null, primary key (id)) type=MyISAM
+2026-03-14T23:42:03.546+08:00  WARN 47820 --- [           main] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "create table User (id bigint not null auto_increment, age integer not null, created_at datetime, email varchar(100) not null, updated_at datetime, username varchar(50) not null, primary key (id)) type=MyISAM" via JDBC Statement
+
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "create table User (id bigint not null auto_increment, age integer not null, created_at datetime, email varchar(100) not null, updated_at datetime, username varchar(50) not null, primary key (id)) type=MyISAM" via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67) ~[hibernate-core-6.1.5.Final.jar:6.1.5.Final]
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.applySqlString(SchemaCreatorImpl.java:502) ~[hibernate-core-6.1.5.Final.jar:6.1.5.Final]
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.applySqlStrings(SchemaCreatorImpl.java:486) ~[hibernate-core-6.1.5.Final.jar:6.1.5.Final]
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.createFromMetadata(SchemaCreatorImpl.java:363) ~[hibernate-core-6.1.5.Final.jar:6.1.5.Final]
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.performCreation(SchemaCreatorImpl.java:176) ~[hibernate-core-6.1.5.Final.jar:6.1.5.Final]
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:144) ~[hibernate-core-6.1.5.Final.jar:6.1.5.Final]
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:128) ~[hibernate-core-6.1.5.Final.jar:6.1.5.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:254) ~[hibernate-core-6.1.5.Final.jar:6.1.5.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:143) ~[hibernate-core-6.1.5.Final.jar:6.1.5.Final]
+	at java.base/java.util.HashMap.forEach(HashMap.java:1421) ~[na:na]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:140) ~[hibernate-core-6.1.5.Final.jar:6.1.5.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:334) ~[hibernate-core-6.1.5.Final.jar:6.1.5.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:415) ~[hibernate-core-6.1.5.Final.jar:6.1.5.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1425) ~[hibernate-core-6.1.5.Final.jar:6.1.5.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66) ~[spring-orm-6.0.2.jar:6.0.2]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:376) ~[spring-orm-6.0.2.jar:6.0.2]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-6.0.2.jar:6.0.2]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-6.0.2.jar:6.0.2]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:352) ~[spring-orm-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1797) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1747) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:599) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1130) ~[spring-context-6.0.2.jar:6.0.2]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:905) ~[spring-context-6.0.2.jar:6.0.2]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:584) ~[spring-context-6.0.2.jar:6.0.2]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730) ~[spring-boot-3.0.0.jar:3.0.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:432) ~[spring-boot-3.0.0.jar:3.0.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) ~[spring-boot-3.0.0.jar:3.0.0]
+	at org.springframework.boot.test.context.SpringBootContextLoader.lambda$loadContext$3(SpringBootContextLoader.java:137) ~[spring-boot-test-3.0.0.jar:3.0.0]
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:59) ~[spring-core-6.0.2.jar:6.0.2]
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:47) ~[spring-core-6.0.2.jar:6.0.2]
+	at org.springframework.boot.SpringApplication.withHook(SpringApplication.java:1386) ~[spring-boot-3.0.0.jar:3.0.0]
+	at org.springframework.boot.test.context.SpringBootContextLoader$ContextLoaderHook.run(SpringBootContextLoader.java:543) ~[spring-boot-test-3.0.0.jar:3.0.0]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:137) ~[spring-boot-test-3.0.0.jar:3.0.0]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:108) ~[spring-boot-test-3.0.0.jar:3.0.0]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:183) ~[spring-test-6.0.2.jar:6.0.2]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117) ~[spring-test-6.0.2.jar:6.0.2]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:127) ~[spring-test-6.0.2.jar:6.0.2]
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:192) ~[spring-test-6.0.2.jar:6.0.2]
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:131) ~[spring-test-6.0.2.jar:6.0.2]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:249) ~[spring-test-6.0.2.jar:6.0.2]
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:138) ~[spring-test-6.0.2.jar:6.0.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$10(ClassBasedTestDescriptor.java:377) ~[junit-jupiter-engine-5.9.1.jar:5.9.1]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:382) ~[junit-jupiter-engine-5.9.1.jar:5.9.1]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$11(ClassBasedTestDescriptor.java:377) ~[junit-jupiter-engine-5.9.1.jar:5.9.1]
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179) ~[na:na]
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[na:na]
+	at java.base/java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:310) ~[na:na]
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:735) ~[na:na]
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:734) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762) ~[na:na]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:376) ~[junit-jupiter-engine-5.9.1.jar:5.9.1]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$6(ClassBasedTestDescriptor.java:289) ~[junit-jupiter-engine-5.9.1.jar:5.9.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.9.1.jar:1.9.1]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:288) ~[junit-jupiter-engine-5.9.1.jar:5.9.1]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$4(ClassBasedTestDescriptor.java:278) ~[junit-jupiter-engine-5.9.1.jar:5.9.1]
+	at java.base/java.util.Optional.orElseGet(Optional.java:364) ~[na:na]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:277) ~[junit-jupiter-engine-5.9.1.jar:5.9.1]
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31) ~[junit-jupiter-engine-5.9.1.jar:5.9.1]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:105) ~[junit-jupiter-engine-5.9.1.jar:5.9.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.9.1.jar:1.9.1]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:104) ~[junit-jupiter-engine-5.9.1.jar:5.9.1]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:68) ~[junit-jupiter-engine-5.9.1.jar:5.9.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:123) ~[junit-platform-engine-1.9.1.jar:1.9.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.9.1.jar:1.9.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:123) ~[junit-platform-engine-1.9.1.jar:1.9.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:90) ~[junit-platform-engine-1.9.1.jar:1.9.1]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) ~[na:na]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.9.1.jar:1.9.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine-1.9.1.jar:1.9.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.9.1.jar:1.9.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.9.1.jar:1.9.1]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.9.1.jar:1.9.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.9.1.jar:1.9.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.9.1.jar:1.9.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.9.1.jar:1.9.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.9.1.jar:1.9.1]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) ~[na:na]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.9.1.jar:1.9.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine-1.9.1.jar:1.9.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.9.1.jar:1.9.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.9.1.jar:1.9.1]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.9.1.jar:1.9.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.9.1.jar:1.9.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.9.1.jar:1.9.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.9.1.jar:1.9.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.9.1.jar:1.9.1]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35) ~[junit-platform-engine-1.9.1.jar:1.9.1]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) ~[junit-platform-engine-1.9.1.jar:1.9.1]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54) ~[junit-platform-engine-1.9.1.jar:1.9.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:220) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$6(DefaultLauncher.java:188) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:202) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:181) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:128) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:150) ~[surefire-junit-platform-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:124) ~[surefire-junit-platform-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384) ~[surefire-booter-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345) ~[surefire-booter-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126) ~[surefire-booter-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418) ~[surefire-booter-2.22.2.jar:2.22.2]
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]User (id bigint not null auto_increment, age integer not null, created_at datetime, email varchar(100) not null, updated_at datetime, username varchar(50) not null, primary key (id)) type=MyISAM"; expected "identifier"; SQL statement:
+create table User (id bigint not null auto_increment, age integer not null, created_at datetime, email varchar(100) not null, updated_at datetime, username varchar(50) not null, primary key (id)) type=MyISAM [42001-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.message.DbException.getSyntaxError(DbException.java:261) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.command.Parser.readIdentifier(Parser.java:5656) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.command.Parser.readIdentifierWithSchema(Parser.java:5616) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.command.Parser.readIdentifierWithSchema(Parser.java:5645) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.command.Parser.parseCreateTable(Parser.java:9253) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.command.Parser.parseCreate(Parser.java:6784) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.command.Parser.parsePrepared(Parser.java:763) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.command.Parser.parse(Parser.java:689) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.command.Parser.parse(Parser.java:661) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.command.Parser.prepareCommand(Parser.java:569) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:631) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:554) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:237) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:223) ~[h2-2.1.214.jar:2.1.214]
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94) ~[HikariCP-5.0.1.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-5.0.1.jar:na]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54) ~[hibernate-core-6.1.5.Final.jar:6.1.5.Final]
+	... 108 common frames omitted
+
+2026-03-14T23:42:03.549+08:00 DEBUG 47820 --- [           main] org.hibernate.SQL                        : alter table User add constraint UK_jreodf78a7pl5qidfh43axdfb unique (username)
+Hibernate: alter table User add constraint UK_jreodf78a7pl5qidfh43axdfb unique (username)
+2026-03-14T23:42:03.549+08:00  WARN 47820 --- [           main] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "alter table User add constraint UK_jreodf78a7pl5qidfh43axdfb unique (username)" via JDBC Statement
+
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table User add constraint UK_jreodf78a7pl5qidfh43axdfb unique (username)" via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67) ~[hibernate-core-6.1.5.Final.jar:6.1.5.Final]
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.applySqlString(SchemaCreatorImpl.java:502) ~[hibernate-core-6.1.5.Final.jar:6.1.5.Final]
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.applySqlStrings(SchemaCreatorImpl.java:486) ~[hibernate-core-6.1.5.Final.jar:6.1.5.Final]
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.createFromMetadata(SchemaCreatorImpl.java:402) ~[hibernate-core-6.1.5.Final.jar:6.1.5.Final]
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.performCreation(SchemaCreatorImpl.java:176) ~[hibernate-core-6.1.5.Final.jar:6.1.5.Final]
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:144) ~[hibernate-core-6.1.5.Final.jar:6.1.5.Final]
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:128) ~[hibernate-core-6.1.5.Final.jar:6.1.5.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:254) ~[hibernate-core-6.1.5.Final.jar:6.1.5.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:143) ~[hibernate-core-6.1.5.Final.jar:6.1.5.Final]
+	at java.base/java.util.HashMap.forEach(HashMap.java:1421) ~[na:na]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:140) ~[hibernate-core-6.1.5.Final.jar:6.1.5.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:334) ~[hibernate-core-6.1.5.Final.jar:6.1.5.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:415) ~[hibernate-core-6.1.5.Final.jar:6.1.5.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1425) ~[hibernate-core-6.1.5.Final.jar:6.1.5.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66) ~[spring-orm-6.0.2.jar:6.0.2]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:376) ~[spring-orm-6.0.2.jar:6.0.2]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-6.0.2.jar:6.0.2]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-6.0.2.jar:6.0.2]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:352) ~[spring-orm-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1797) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1747) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:599) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1130) ~[spring-context-6.0.2.jar:6.0.2]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:905) ~[spring-context-6.0.2.jar:6.0.2]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:584) ~[spring-context-6.0.2.jar:6.0.2]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730) ~[spring-boot-3.0.0.jar:3.0.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:432) ~[spring-boot-3.0.0.jar:3.0.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) ~[spring-boot-3.0.0.jar:3.0.0]
+	at org.springframework.boot.test.context.SpringBootContextLoader.lambda$loadContext$3(SpringBootContextLoader.java:137) ~[spring-boot-test-3.0.0.jar:3.0.0]
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:59) ~[spring-core-6.0.2.jar:6.0.2]
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:47) ~[spring-core-6.0.2.jar:6.0.2]
+	at org.springframework.boot.SpringApplication.withHook(SpringApplication.java:1386) ~[spring-boot-3.0.0.jar:3.0.0]
+	at org.springframework.boot.test.context.SpringBootContextLoader$ContextLoaderHook.run(SpringBootContextLoader.java:543) ~[spring-boot-test-3.0.0.jar:3.0.0]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:137) ~[spring-boot-test-3.0.0.jar:3.0.0]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:108) ~[spring-boot-test-3.0.0.jar:3.0.0]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:183) ~[spring-test-6.0.2.jar:6.0.2]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117) ~[spring-test-6.0.2.jar:6.0.2]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:127) ~[spring-test-6.0.2.jar:6.0.2]
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:192) ~[spring-test-6.0.2.jar:6.0.2]
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:131) ~[spring-test-6.0.2.jar:6.0.2]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:249) ~[spring-test-6.0.2.jar:6.0.2]
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:138) ~[spring-test-6.0.2.jar:6.0.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$10(ClassBasedTestDescriptor.java:377) ~[junit-jupiter-engine-5.9.1.jar:5.9.1]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:382) ~[junit-jupiter-engine-5.9.1.jar:5.9.1]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$11(ClassBasedTestDescriptor.java:377) ~[junit-jupiter-engine-5.9.1.jar:5.9.1]
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179) ~[na:na]
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[na:na]
+	at java.base/java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:310) ~[na:na]
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:735) ~[na:na]
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:734) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762) ~[na:na]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:376) ~[junit-jupiter-engine-5.9.1.jar:5.9.1]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$6(ClassBasedTestDescriptor.java:289) ~[junit-jupiter-engine-5.9.1.jar:5.9.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.9.1.jar:1.9.1]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:288) ~[junit-jupiter-engine-5.9.1.jar:5.9.1]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$4(ClassBasedTestDescriptor.java:278) ~[junit-jupiter-engine-5.9.1.jar:5.9.1]
+	at java.base/java.util.Optional.orElseGet(Optional.java:364) ~[na:na]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:277) ~[junit-jupiter-engine-5.9.1.jar:5.9.1]
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31) ~[junit-jupiter-engine-5.9.1.jar:5.9.1]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:105) ~[junit-jupiter-engine-5.9.1.jar:5.9.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.9.1.jar:1.9.1]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:104) ~[junit-jupiter-engine-5.9.1.jar:5.9.1]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:68) ~[junit-jupiter-engine-5.9.1.jar:5.9.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:123) ~[junit-platform-engine-1.9.1.jar:1.9.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.9.1.jar:1.9.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:123) ~[junit-platform-engine-1.9.1.jar:1.9.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:90) ~[junit-platform-engine-1.9.1.jar:1.9.1]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) ~[na:na]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.9.1.jar:1.9.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine-1.9.1.jar:1.9.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.9.1.jar:1.9.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.9.1.jar:1.9.1]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.9.1.jar:1.9.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.9.1.jar:1.9.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.9.1.jar:1.9.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.9.1.jar:1.9.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.9.1.jar:1.9.1]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) ~[na:na]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.9.1.jar:1.9.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine-1.9.1.jar:1.9.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.9.1.jar:1.9.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.9.1.jar:1.9.1]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.9.1.jar:1.9.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.9.1.jar:1.9.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.9.1.jar:1.9.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.9.1.jar:1.9.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.9.1.jar:1.9.1]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35) ~[junit-platform-engine-1.9.1.jar:1.9.1]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) ~[junit-platform-engine-1.9.1.jar:1.9.1]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54) ~[junit-platform-engine-1.9.1.jar:1.9.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:220) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$6(DefaultLauncher.java:188) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:202) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:181) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:128) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:150) ~[surefire-junit-platform-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:124) ~[surefire-junit-platform-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384) ~[surefire-booter-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345) ~[surefire-booter-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126) ~[surefire-booter-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418) ~[surefire-booter-2.22.2.jar:2.22.2]
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table [*]User add constraint UK_jreodf78a7pl5qidfh43axdfb unique (username)"; expected "identifier"; SQL statement:
+alter table User add constraint UK_jreodf78a7pl5qidfh43axdfb unique (username) [42001-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.message.DbException.getSyntaxError(DbException.java:261) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.command.Parser.readIdentifier(Parser.java:5656) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.command.Parser.readIdentifierWithSchema(Parser.java:5616) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.command.Parser.readIdentifierWithSchema(Parser.java:5645) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.command.Parser.parseAlterTable(Parser.java:8476) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.command.Parser.parseAlter(Parser.java:7548) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.command.Parser.parsePrepared(Parser.java:747) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.command.Parser.parse(Parser.java:689) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.command.Parser.parse(Parser.java:661) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.command.Parser.prepareCommand(Parser.java:569) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:631) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:554) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:237) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:223) ~[h2-2.1.214.jar:2.1.214]
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94) ~[HikariCP-5.0.1.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-5.0.1.jar:na]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54) ~[hibernate-core-6.1.5.Final.jar:6.1.5.Final]
+	... 108 common frames omitted
+
+2026-03-14T23:42:03.554+08:00  INFO 47820 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2026-03-14T23:42:03.562+08:00  INFO 47820 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-14T23:42:03.709+08:00  INFO 47820 --- [           main] org.mongodb.driver.client                : MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.8.0"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/17.0.12+8-LTS-286"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.Jep395RecordCodecProvider@4b7c0f39]}, clusterSettings={hosts=[localhost:27018], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+2026-03-14T23:42:03.714+08:00  INFO 47820 --- [localhost:27018] org.mongodb.driver.cluster               : Exception in monitor thread while connecting to server localhost:27018
+
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:73) ~[mongodb-driver-core-4.8.0.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:183) ~[mongodb-driver-core-4.8.0.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:193) ~[mongodb-driver-core-4.8.0.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:157) ~[mongodb-driver-core-4.8.0.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:547) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602) ~[na:na]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[na:na]
+	at java.base/java.net.Socket.connect(Socket.java:633) ~[na:na]
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:107) ~[mongodb-driver-core-4.8.0.jar:na]
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:82) ~[mongodb-driver-core-4.8.0.jar:na]
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:68) ~[mongodb-driver-core-4.8.0.jar:na]
+	... 4 common frames omitted
+
+2026-03-14T23:42:04.312+08:00 DEBUG 47820 --- [           main] .c.JpaMetamodelMappingContextFactoryBean : Initializing JpaMetamodelMappingContext…
+2026-03-14T23:42:04.318+08:00 DEBUG 47820 --- [           main] .c.JpaMetamodelMappingContextFactoryBean : Finished initializing JpaMetamodelMappingContext
+2026-03-14T23:42:04.471+08:00 DEBUG 47820 --- [           main] o.s.d.jpa.repository.query.NamedQuery    : Looking up named query User.findByUsername
+2026-03-14T23:42:04.494+08:00 DEBUG 47820 --- [           main] o.s.d.jpa.repository.query.NamedQuery    : Did not find named query User.findByUsername
+2026-03-14T23:42:04.520+08:00 DEBUG 47820 --- [           main] o.s.d.jpa.repository.query.NamedQuery    : Looking up named query User.findByEmail
+2026-03-14T23:42:04.521+08:00 DEBUG 47820 --- [           main] o.s.d.jpa.repository.query.NamedQuery    : Did not find named query User.findByEmail
+2026-03-14T23:42:04.523+08:00 DEBUG 47820 --- [           main] o.s.d.jpa.repository.query.NamedQuery    : Looking up named query User.existsByUsername
+2026-03-14T23:42:04.524+08:00 DEBUG 47820 --- [           main] o.s.d.jpa.repository.query.NamedQuery    : Did not find named query User.existsByUsername
+2026-03-14T23:42:05.135+08:00  WARN 47820 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-14T23:42:05.703+08:00  WARN 47820 --- [           main] ocalVariableTableParameterNameDiscoverer : Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.github.pagehelper.autoconfigure.PageHelperStandardProperties
+2026-03-14T23:42:05.992+08:00  INFO 47820 --- [           main] com.example.demo.UserServiceTest         : Started UserServiceTest in 5.209 seconds (process running for 5.8)
+2026-03-14T23:42:06.005+08:00 DEBUG 47820 --- [           main] org.springframework.test.context.cache   : Spring test ApplicationContext cache statistics: [DefaultContextCache@628f642d size = 1, maxSize = 32, parentContextCount = 0, hitCount = 0, missCount = 1]
+2026-03-14T23:42:06.007+08:00 DEBUG 47820 --- [           main] o.s.t.c.w.ServletTestExecutionListener   : Setting up MockHttpServletRequest, MockHttpServletResponse, ServletWebRequest, and RequestContextHolder for test class com.example.demo.UserServiceTest
+2026-03-14T23:42:06.050+08:00 DEBUG 47820 --- [           main] DependencyInjectionTestExecutionListener : Performing dependency injection for test class com.example.demo.UserServiceTest
+2026-03-14T23:42:06.050+08:00 DEBUG 47820 --- [           main] org.springframework.test.context.cache   : Spring test ApplicationContext cache statistics: [DefaultContextCache@628f642d size = 1, maxSize = 32, parentContextCount = 0, hitCount = 1, missCount = 1]
+2026-03-14T23:42:06.053+08:00 DEBUG 47820 --- [           main] org.springframework.test.context.cache   : Spring test ApplicationContext cache statistics: [DefaultContextCache@628f642d size = 1, maxSize = 32, parentContextCount = 0, hitCount = 2, missCount = 1]
+2026-03-14T23:42:06.064+08:00 DEBUG 47820 --- [           main] tractDirtiesContextTestExecutionListener : Before test method: class [UserServiceTest], method [testFindAllUsers], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null]
+2026-03-14T23:42:06.072+08:00 DEBUG 47820 --- [           main] org.springframework.test.context.cache   : Spring test ApplicationContext cache statistics: [DefaultContextCache@628f642d size = 1, maxSize = 32, parentContextCount = 0, hitCount = 3, missCount = 1]
+2026-03-14T23:42:06.072+08:00 DEBUG 47820 --- [           main] org.springframework.test.context.cache   : Spring test ApplicationContext cache statistics: [DefaultContextCache@628f642d size = 1, maxSize = 32, parentContextCount = 0, hitCount = 4, missCount = 1]
+2026-03-14T23:42:06.514+08:00 DEBUG 47820 --- [           main] org.hibernate.SQL                        : select u1_0.id,u1_0.age,u1_0.created_at,u1_0.email,u1_0.updated_at,u1_0.username from User u1_0
+Hibernate: select u1_0.id,u1_0.age,u1_0.created_at,u1_0.email,u1_0.updated_at,u1_0.username from User u1_0
+2026-03-14T23:42:06.516+08:00  WARN 47820 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 42001, SQLState: 42001
+2026-03-14T23:42:06.516+08:00 ERROR 47820 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : Syntax error in SQL statement "select u1_0.id,u1_0.age,u1_0.created_at,u1_0.email,u1_0.updated_at,u1_0.username from [*]User u1_0"; expected "identifier"; SQL statement:
+select u1_0.id,u1_0.age,u1_0.created_at,u1_0.email,u1_0.updated_at,u1_0.username from User u1_0 [42001-214]
+2026-03-14T23:42:06.526+08:00 DEBUG 47820 --- [           main] org.springframework.test.context.cache   : Spring test ApplicationContext cache statistics: [DefaultContextCache@628f642d size = 1, maxSize = 32, parentContextCount = 0, hitCount = 5, missCount = 1]
+2026-03-14T23:42:06.526+08:00 DEBUG 47820 --- [           main] org.springframework.test.context.cache   : Spring test ApplicationContext cache statistics: [DefaultContextCache@628f642d size = 1, maxSize = 32, parentContextCount = 0, hitCount = 6, missCount = 1]
+2026-03-14T23:42:06.527+08:00 DEBUG 47820 --- [           main] org.springframework.test.context.cache   : Spring test ApplicationContext cache statistics: [DefaultContextCache@628f642d size = 1, maxSize = 32, parentContextCount = 0, hitCount = 7, missCount = 1]
+2026-03-14T23:42:06.528+08:00 DEBUG 47820 --- [           main] org.springframework.test.context.cache   : Spring test ApplicationContext cache statistics: [DefaultContextCache@628f642d size = 1, maxSize = 32, parentContextCount = 0, hitCount = 8, missCount = 1]
+2026-03-14T23:42:06.529+08:00 DEBUG 47820 --- [           main] org.springframework.test.context.cache   : Spring test ApplicationContext cache statistics: [DefaultContextCache@628f642d size = 1, maxSize = 32, parentContextCount = 0, hitCount = 9, missCount = 1]
+2026-03-14T23:42:06.530+08:00 DEBUG 47820 --- [           main] tractDirtiesContextTestExecutionListener : After test method: class [UserServiceTest], method [testFindAllUsers], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null]
+2026-03-14T23:42:06.530+08:00 DEBUG 47820 --- [           main] o.s.t.c.w.ServletTestExecutionListener   : Resetting RequestContextHolder for test class com.example.demo.UserServiceTest
+]]></system-out>
+  </testcase>
+  <testcase name="testUpdateUser" classname="com.example.demo.UserServiceTest" time="0.008">
+    <error message="could not prepare statement; SQL [select u1_0.id,u1_0.age,u1_0.created_at,u1_0.email,u1_0.updated_at,u1_0.username from User u1_0]" type="org.springframework.dao.InvalidDataAccessResourceUsageException">org.springframework.dao.InvalidDataAccessResourceUsageException: could not prepare statement; SQL [select u1_0.id,u1_0.age,u1_0.created_at,u1_0.email,u1_0.updated_at,u1_0.username from User u1_0]
+	at com.example.demo.UserServiceTest.setUp(UserServiceTest.java:31)
+Caused by: org.hibernate.exception.SQLGrammarException: could not prepare statement
+	at com.example.demo.UserServiceTest.setUp(UserServiceTest.java:31)
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: 
+Syntax error in SQL statement "select u1_0.id,u1_0.age,u1_0.created_at,u1_0.email,u1_0.updated_at,u1_0.username from [*]User u1_0"; expected "identifier"; SQL statement:
+select u1_0.id,u1_0.age,u1_0.created_at,u1_0.email,u1_0.updated_at,u1_0.username from User u1_0 [42001-214]
+	at com.example.demo.UserServiceTest.setUp(UserServiceTest.java:31)
+</error>
+    <system-out><![CDATA[2026-03-14T23:42:06.542+08:00 DEBUG 47820 --- [           main] org.springframework.test.context.cache   : Spring test ApplicationContext cache statistics: [DefaultContextCache@628f642d size = 1, maxSize = 32, parentContextCount = 0, hitCount = 10, missCount = 1]
+2026-03-14T23:42:06.542+08:00 DEBUG 47820 --- [           main] o.s.t.c.w.ServletTestExecutionListener   : Setting up MockHttpServletRequest, MockHttpServletResponse, ServletWebRequest, and RequestContextHolder for test class com.example.demo.UserServiceTest
+2026-03-14T23:42:06.542+08:00 DEBUG 47820 --- [           main] DependencyInjectionTestExecutionListener : Performing dependency injection for test class com.example.demo.UserServiceTest
+2026-03-14T23:42:06.542+08:00 DEBUG 47820 --- [           main] org.springframework.test.context.cache   : Spring test ApplicationContext cache statistics: [DefaultContextCache@628f642d size = 1, maxSize = 32, parentContextCount = 0, hitCount = 11, missCount = 1]
+2026-03-14T23:42:06.542+08:00 DEBUG 47820 --- [           main] org.springframework.test.context.cache   : Spring test ApplicationContext cache statistics: [DefaultContextCache@628f642d size = 1, maxSize = 32, parentContextCount = 0, hitCount = 12, missCount = 1]
+2026-03-14T23:42:06.543+08:00 DEBUG 47820 --- [           main] tractDirtiesContextTestExecutionListener : Before test method: class [UserServiceTest], method [testUpdateUser], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null]
+2026-03-14T23:42:06.543+08:00 DEBUG 47820 --- [           main] org.springframework.test.context.cache   : Spring test ApplicationContext cache statistics: [DefaultContextCache@628f642d size = 1, maxSize = 32, parentContextCount = 0, hitCount = 13, missCount = 1]
+2026-03-14T23:42:06.544+08:00 DEBUG 47820 --- [           main] org.springframework.test.context.cache   : Spring test ApplicationContext cache statistics: [DefaultContextCache@628f642d size = 1, maxSize = 32, parentContextCount = 0, hitCount = 14, missCount = 1]
+2026-03-14T23:42:06.547+08:00 DEBUG 47820 --- [           main] org.hibernate.SQL                        : select u1_0.id,u1_0.age,u1_0.created_at,u1_0.email,u1_0.updated_at,u1_0.username from User u1_0
+Hibernate: select u1_0.id,u1_0.age,u1_0.created_at,u1_0.email,u1_0.updated_at,u1_0.username from User u1_0
+2026-03-14T23:42:06.548+08:00  WARN 47820 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 42001, SQLState: 42001
+2026-03-14T23:42:06.548+08:00 ERROR 47820 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : Syntax error in SQL statement "select u1_0.id,u1_0.age,u1_0.created_at,u1_0.email,u1_0.updated_at,u1_0.username from [*]User u1_0"; expected "identifier"; SQL statement:
+select u1_0.id,u1_0.age,u1_0.created_at,u1_0.email,u1_0.updated_at,u1_0.username from User u1_0 [42001-214]
+2026-03-14T23:42:06.550+08:00 DEBUG 47820 --- [           main] org.springframework.test.context.cache   : Spring test ApplicationContext cache statistics: [DefaultContextCache@628f642d size = 1, maxSize = 32, parentContextCount = 0, hitCount = 15, missCount = 1]
+2026-03-14T23:42:06.550+08:00 DEBUG 47820 --- [           main] org.springframework.test.context.cache   : Spring test ApplicationContext cache statistics: [DefaultContextCache@628f642d size = 1, maxSize = 32, parentContextCount = 0, hitCount = 16, missCount = 1]
+2026-03-14T23:42:06.550+08:00 DEBUG 47820 --- [           main] org.springframework.test.context.cache   : Spring test ApplicationContext cache statistics: [DefaultContextCache@628f642d size = 1, maxSize = 32, parentContextCount = 0, hitCount = 17, missCount = 1]
+2026-03-14T23:42:06.550+08:00 DEBUG 47820 --- [           main] org.springframework.test.context.cache   : Spring test ApplicationContext cache statistics: [DefaultContextCache@628f642d size = 1, maxSize = 32, parentContextCount = 0, hitCount = 18, missCount = 1]
+2026-03-14T23:42:06.550+08:00 DEBUG 47820 --- [           main] org.springframework.test.context.cache   : Spring test ApplicationContext cache statistics: [DefaultContextCache@628f642d size = 1, maxSize = 32, parentContextCount = 0, hitCount = 19, missCount = 1]
+2026-03-14T23:42:06.551+08:00 DEBUG 47820 --- [           main] tractDirtiesContextTestExecutionListener : After test method: class [UserServiceTest], method [testUpdateUser], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null]
+2026-03-14T23:42:06.551+08:00 DEBUG 47820 --- [           main] o.s.t.c.w.ServletTestExecutionListener   : Resetting RequestContextHolder for test class com.example.demo.UserServiceTest
+]]></system-out>
+  </testcase>
+  <testcase name="testFindByUsername" classname="com.example.demo.UserServiceTest" time="0.009">
+    <error message="could not prepare statement; SQL [select u1_0.id,u1_0.age,u1_0.created_at,u1_0.email,u1_0.updated_at,u1_0.username from User u1_0]" type="org.springframework.dao.InvalidDataAccessResourceUsageException">org.springframework.dao.InvalidDataAccessResourceUsageException: could not prepare statement; SQL [select u1_0.id,u1_0.age,u1_0.created_at,u1_0.email,u1_0.updated_at,u1_0.username from User u1_0]
+	at com.example.demo.UserServiceTest.setUp(UserServiceTest.java:31)
+Caused by: org.hibernate.exception.SQLGrammarException: could not prepare statement
+	at com.example.demo.UserServiceTest.setUp(UserServiceTest.java:31)
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: 
+Syntax error in SQL statement "select u1_0.id,u1_0.age,u1_0.created_at,u1_0.email,u1_0.updated_at,u1_0.username from [*]User u1_0"; expected "identifier"; SQL statement:
+select u1_0.id,u1_0.age,u1_0.created_at,u1_0.email,u1_0.updated_at,u1_0.username from User u1_0 [42001-214]
+	at com.example.demo.UserServiceTest.setUp(UserServiceTest.java:31)
+</error>
+    <system-out><![CDATA[2026-03-14T23:42:06.553+08:00 DEBUG 47820 --- [           main] org.springframework.test.context.cache   : Spring test ApplicationContext cache statistics: [DefaultContextCache@628f642d size = 1, maxSize = 32, parentContextCount = 0, hitCount = 20, missCount = 1]
+2026-03-14T23:42:06.553+08:00 DEBUG 47820 --- [           main] o.s.t.c.w.ServletTestExecutionListener   : Setting up MockHttpServletRequest, MockHttpServletResponse, ServletWebRequest, and RequestContextHolder for test class com.example.demo.UserServiceTest
+2026-03-14T23:42:06.553+08:00 DEBUG 47820 --- [           main] DependencyInjectionTestExecutionListener : Performing dependency injection for test class com.example.demo.UserServiceTest
+2026-03-14T23:42:06.553+08:00 DEBUG 47820 --- [           main] org.springframework.test.context.cache   : Spring test ApplicationContext cache statistics: [DefaultContextCache@628f642d size = 1, maxSize = 32, parentContextCount = 0, hitCount = 21, missCount = 1]
+2026-03-14T23:42:06.553+08:00 DEBUG 47820 --- [           main] org.springframework.test.context.cache   : Spring test ApplicationContext cache statistics: [DefaultContextCache@628f642d size = 1, maxSize = 32, parentContextCount = 0, hitCount = 22, missCount = 1]
+2026-03-14T23:42:06.553+08:00 DEBUG 47820 --- [           main] tractDirtiesContextTestExecutionListener : Before test method: class [UserServiceTest], method [testFindByUsername], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null]
+2026-03-14T23:42:06.555+08:00 DEBUG 47820 --- [           main] org.springframework.test.context.cache   : Spring test ApplicationContext cache statistics: [DefaultContextCache@628f642d size = 1, maxSize = 32, parentContextCount = 0, hitCount = 23, missCount = 1]
+2026-03-14T23:42:06.555+08:00 DEBUG 47820 --- [           main] org.springframework.test.context.cache   : Spring test ApplicationContext cache statistics: [DefaultContextCache@628f642d size = 1, maxSize = 32, parentContextCount = 0, hitCount = 24, missCount = 1]
+2026-03-14T23:42:06.558+08:00 DEBUG 47820 --- [           main] org.hibernate.SQL                        : select u1_0.id,u1_0.age,u1_0.created_at,u1_0.email,u1_0.updated_at,u1_0.username from User u1_0
+Hibernate: select u1_0.id,u1_0.age,u1_0.created_at,u1_0.email,u1_0.updated_at,u1_0.username from User u1_0
+2026-03-14T23:42:06.558+08:00  WARN 47820 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 42001, SQLState: 42001
+2026-03-14T23:42:06.558+08:00 ERROR 47820 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : Syntax error in SQL statement "select u1_0.id,u1_0.age,u1_0.created_at,u1_0.email,u1_0.updated_at,u1_0.username from [*]User u1_0"; expected "identifier"; SQL statement:
+select u1_0.id,u1_0.age,u1_0.created_at,u1_0.email,u1_0.updated_at,u1_0.username from User u1_0 [42001-214]
+2026-03-14T23:42:06.560+08:00 DEBUG 47820 --- [           main] org.springframework.test.context.cache   : Spring test ApplicationContext cache statistics: [DefaultContextCache@628f642d size = 1, maxSize = 32, parentContextCount = 0, hitCount = 25, missCount = 1]
+2026-03-14T23:42:06.560+08:00 DEBUG 47820 --- [           main] org.springframework.test.context.cache   : Spring test ApplicationContext cache statistics: [DefaultContextCache@628f642d size = 1, maxSize = 32, parentContextCount = 0, hitCount = 26, missCount = 1]
+2026-03-14T23:42:06.560+08:00 DEBUG 47820 --- [           main] org.springframework.test.context.cache   : Spring test ApplicationContext cache statistics: [DefaultContextCache@628f642d size = 1, maxSize = 32, parentContextCount = 0, hitCount = 27, missCount = 1]
+2026-03-14T23:42:06.561+08:00 DEBUG 47820 --- [           main] org.springframework.test.context.cache   : Spring test ApplicationContext cache statistics: [DefaultContextCache@628f642d size = 1, maxSize = 32, parentContextCount = 0, hitCount = 28, missCount = 1]
+2026-03-14T23:42:06.561+08:00 DEBUG 47820 --- [           main] org.springframework.test.context.cache   : Spring test ApplicationContext cache statistics: [DefaultContextCache@628f642d size = 1, maxSize = 32, parentContextCount = 0, hitCount = 29, missCount = 1]
+2026-03-14T23:42:06.561+08:00 DEBUG 47820 --- [           main] tractDirtiesContextTestExecutionListener : After test method: class [UserServiceTest], method [testFindByUsername], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null]
+2026-03-14T23:42:06.561+08:00 DEBUG 47820 --- [           main] o.s.t.c.w.ServletTestExecutionListener   : Resetting RequestContextHolder for test class com.example.demo.UserServiceTest
+]]></system-out>
+  </testcase>
+  <testcase name="testExistsByUsername" classname="com.example.demo.UserServiceTest" time="0.007">
+    <error message="could not prepare statement; SQL [select u1_0.id,u1_0.age,u1_0.created_at,u1_0.email,u1_0.updated_at,u1_0.username from User u1_0]" type="org.springframework.dao.InvalidDataAccessResourceUsageException">org.springframework.dao.InvalidDataAccessResourceUsageException: could not prepare statement; SQL [select u1_0.id,u1_0.age,u1_0.created_at,u1_0.email,u1_0.updated_at,u1_0.username from User u1_0]
+	at com.example.demo.UserServiceTest.setUp(UserServiceTest.java:31)
+Caused by: org.hibernate.exception.SQLGrammarException: could not prepare statement
+	at com.example.demo.UserServiceTest.setUp(UserServiceTest.java:31)
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: 
+Syntax error in SQL statement "select u1_0.id,u1_0.age,u1_0.created_at,u1_0.email,u1_0.updated_at,u1_0.username from [*]User u1_0"; expected "identifier"; SQL statement:
+select u1_0.id,u1_0.age,u1_0.created_at,u1_0.email,u1_0.updated_at,u1_0.username from User u1_0 [42001-214]
+	at com.example.demo.UserServiceTest.setUp(UserServiceTest.java:31)
+</error>
+    <system-out><![CDATA[2026-03-14T23:42:06.562+08:00 DEBUG 47820 --- [           main] org.springframework.test.context.cache   : Spring test ApplicationContext cache statistics: [DefaultContextCache@628f642d size = 1, maxSize = 32, parentContextCount = 0, hitCount = 30, missCount = 1]
+2026-03-14T23:42:06.562+08:00 DEBUG 47820 --- [           main] o.s.t.c.w.ServletTestExecutionListener   : Setting up MockHttpServletRequest, MockHttpServletResponse, ServletWebRequest, and RequestContextHolder for test class com.example.demo.UserServiceTest
+2026-03-14T23:42:06.563+08:00 DEBUG 47820 --- [           main] DependencyInjectionTestExecutionListener : Performing dependency injection for test class com.example.demo.UserServiceTest
+2026-03-14T23:42:06.563+08:00 DEBUG 47820 --- [           main] org.springframework.test.context.cache   : Spring test ApplicationContext cache statistics: [DefaultContextCache@628f642d size = 1, maxSize = 32, parentContextCount = 0, hitCount = 31, missCount = 1]
+2026-03-14T23:42:06.563+08:00 DEBUG 47820 --- [           main] org.springframework.test.context.cache   : Spring test ApplicationContext cache statistics: [DefaultContextCache@628f642d size = 1, maxSize = 32, parentContextCount = 0, hitCount = 32, missCount = 1]
+2026-03-14T23:42:06.563+08:00 DEBUG 47820 --- [           main] tractDirtiesContextTestExecutionListener : Before test method: class [UserServiceTest], method [testExistsByUsername], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null]
+2026-03-14T23:42:06.564+08:00 DEBUG 47820 --- [           main] org.springframework.test.context.cache   : Spring test ApplicationContext cache statistics: [DefaultContextCache@628f642d size = 1, maxSize = 32, parentContextCount = 0, hitCount = 33, missCount = 1]
+2026-03-14T23:42:06.564+08:00 DEBUG 47820 --- [           main] org.springframework.test.context.cache   : Spring test ApplicationContext cache statistics: [DefaultContextCache@628f642d size = 1, maxSize = 32, parentContextCount = 0, hitCount = 34, missCount = 1]
+2026-03-14T23:42:06.566+08:00 DEBUG 47820 --- [           main] org.hibernate.SQL                        : select u1_0.id,u1_0.age,u1_0.created_at,u1_0.email,u1_0.updated_at,u1_0.username from User u1_0
+Hibernate: select u1_0.id,u1_0.age,u1_0.created_at,u1_0.email,u1_0.updated_at,u1_0.username from User u1_0
+2026-03-14T23:42:06.567+08:00  WARN 47820 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 42001, SQLState: 42001
+2026-03-14T23:42:06.567+08:00 ERROR 47820 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : Syntax error in SQL statement "select u1_0.id,u1_0.age,u1_0.created_at,u1_0.email,u1_0.updated_at,u1_0.username from [*]User u1_0"; expected "identifier"; SQL statement:
+select u1_0.id,u1_0.age,u1_0.created_at,u1_0.email,u1_0.updated_at,u1_0.username from User u1_0 [42001-214]
+2026-03-14T23:42:06.568+08:00 DEBUG 47820 --- [           main] org.springframework.test.context.cache   : Spring test ApplicationContext cache statistics: [DefaultContextCache@628f642d size = 1, maxSize = 32, parentContextCount = 0, hitCount = 35, missCount = 1]
+2026-03-14T23:42:06.568+08:00 DEBUG 47820 --- [           main] org.springframework.test.context.cache   : Spring test ApplicationContext cache statistics: [DefaultContextCache@628f642d size = 1, maxSize = 32, parentContextCount = 0, hitCount = 36, missCount = 1]
+2026-03-14T23:42:06.568+08:00 DEBUG 47820 --- [           main] org.springframework.test.context.cache   : Spring test ApplicationContext cache statistics: [DefaultContextCache@628f642d size = 1, maxSize = 32, parentContextCount = 0, hitCount = 37, missCount = 1]
+2026-03-14T23:42:06.569+08:00 DEBUG 47820 --- [           main] org.springframework.test.context.cache   : Spring test ApplicationContext cache statistics: [DefaultContextCache@628f642d size = 1, maxSize = 32, parentContextCount = 0, hitCount = 38, missCount = 1]
+2026-03-14T23:42:06.569+08:00 DEBUG 47820 --- [           main] org.springframework.test.context.cache   : Spring test ApplicationContext cache statistics: [DefaultContextCache@628f642d size = 1, maxSize = 32, parentContextCount = 0, hitCount = 39, missCount = 1]
+2026-03-14T23:42:06.569+08:00 DEBUG 47820 --- [           main] tractDirtiesContextTestExecutionListener : After test method: class [UserServiceTest], method [testExistsByUsername], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null]
+2026-03-14T23:42:06.569+08:00 DEBUG 47820 --- [           main] o.s.t.c.w.ServletTestExecutionListener   : Resetting RequestContextHolder for test class com.example.demo.UserServiceTest
+]]></system-out>
+  </testcase>
+  <testcase name="testCreateUser" classname="com.example.demo.UserServiceTest" time="0.006">
+    <error message="could not prepare statement; SQL [select u1_0.id,u1_0.age,u1_0.created_at,u1_0.email,u1_0.updated_at,u1_0.username from User u1_0]" type="org.springframework.dao.InvalidDataAccessResourceUsageException">org.springframework.dao.InvalidDataAccessResourceUsageException: could not prepare statement; SQL [select u1_0.id,u1_0.age,u1_0.created_at,u1_0.email,u1_0.updated_at,u1_0.username from User u1_0]
+	at com.example.demo.UserServiceTest.setUp(UserServiceTest.java:31)
+Caused by: org.hibernate.exception.SQLGrammarException: could not prepare statement
+	at com.example.demo.UserServiceTest.setUp(UserServiceTest.java:31)
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: 
+Syntax error in SQL statement "select u1_0.id,u1_0.age,u1_0.created_at,u1_0.email,u1_0.updated_at,u1_0.username from [*]User u1_0"; expected "identifier"; SQL statement:
+select u1_0.id,u1_0.age,u1_0.created_at,u1_0.email,u1_0.updated_at,u1_0.username from User u1_0 [42001-214]
+	at com.example.demo.UserServiceTest.setUp(UserServiceTest.java:31)
+</error>
+    <system-out><![CDATA[2026-03-14T23:42:06.571+08:00 DEBUG 47820 --- [           main] org.springframework.test.context.cache   : Spring test ApplicationContext cache statistics: [DefaultContextCache@628f642d size = 1, maxSize = 32, parentContextCount = 0, hitCount = 40, missCount = 1]
+2026-03-14T23:42:06.571+08:00 DEBUG 47820 --- [           main] o.s.t.c.w.ServletTestExecutionListener   : Setting up MockHttpServletRequest, MockHttpServletResponse, ServletWebRequest, and RequestContextHolder for test class com.example.demo.UserServiceTest
+2026-03-14T23:42:06.571+08:00 DEBUG 47820 --- [           main] DependencyInjectionTestExecutionListener : Performing dependency injection for test class com.example.demo.UserServiceTest
+2026-03-14T23:42:06.571+08:00 DEBUG 47820 --- [           main] org.springframework.test.context.cache   : Spring test ApplicationContext cache statistics: [DefaultContextCache@628f642d size = 1, maxSize = 32, parentContextCount = 0, hitCount = 41, missCount = 1]
+2026-03-14T23:42:06.571+08:00 DEBUG 47820 --- [           main] org.springframework.test.context.cache   : Spring test ApplicationContext cache statistics: [DefaultContextCache@628f642d size = 1, maxSize = 32, parentContextCount = 0, hitCount = 42, missCount = 1]
+2026-03-14T23:42:06.571+08:00 DEBUG 47820 --- [           main] tractDirtiesContextTestExecutionListener : Before test method: class [UserServiceTest], method [testCreateUser], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null]
+2026-03-14T23:42:06.571+08:00 DEBUG 47820 --- [           main] org.springframework.test.context.cache   : Spring test ApplicationContext cache statistics: [DefaultContextCache@628f642d size = 1, maxSize = 32, parentContextCount = 0, hitCount = 43, missCount = 1]
+2026-03-14T23:42:06.571+08:00 DEBUG 47820 --- [           main] org.springframework.test.context.cache   : Spring test ApplicationContext cache statistics: [DefaultContextCache@628f642d size = 1, maxSize = 32, parentContextCount = 0, hitCount = 44, missCount = 1]
+2026-03-14T23:42:06.574+08:00 DEBUG 47820 --- [           main] org.hibernate.SQL                        : select u1_0.id,u1_0.age,u1_0.created_at,u1_0.email,u1_0.updated_at,u1_0.username from User u1_0
+Hibernate: select u1_0.id,u1_0.age,u1_0.created_at,u1_0.email,u1_0.updated_at,u1_0.username from User u1_0
+2026-03-14T23:42:06.574+08:00  WARN 47820 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 42001, SQLState: 42001
+2026-03-14T23:42:06.574+08:00 ERROR 47820 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : Syntax error in SQL statement "select u1_0.id,u1_0.age,u1_0.created_at,u1_0.email,u1_0.updated_at,u1_0.username from [*]User u1_0"; expected "identifier"; SQL statement:
+select u1_0.id,u1_0.age,u1_0.created_at,u1_0.email,u1_0.updated_at,u1_0.username from User u1_0 [42001-214]
+2026-03-14T23:42:06.575+08:00 DEBUG 47820 --- [           main] org.springframework.test.context.cache   : Spring test ApplicationContext cache statistics: [DefaultContextCache@628f642d size = 1, maxSize = 32, parentContextCount = 0, hitCount = 45, missCount = 1]
+2026-03-14T23:42:06.575+08:00 DEBUG 47820 --- [           main] org.springframework.test.context.cache   : Spring test ApplicationContext cache statistics: [DefaultContextCache@628f642d size = 1, maxSize = 32, parentContextCount = 0, hitCount = 46, missCount = 1]
+2026-03-14T23:42:06.575+08:00 DEBUG 47820 --- [           main] org.springframework.test.context.cache   : Spring test ApplicationContext cache statistics: [DefaultContextCache@628f642d size = 1, maxSize = 32, parentContextCount = 0, hitCount = 47, missCount = 1]
+2026-03-14T23:42:06.576+08:00 DEBUG 47820 --- [           main] org.springframework.test.context.cache   : Spring test ApplicationContext cache statistics: [DefaultContextCache@628f642d size = 1, maxSize = 32, parentContextCount = 0, hitCount = 48, missCount = 1]
+2026-03-14T23:42:06.576+08:00 DEBUG 47820 --- [           main] org.springframework.test.context.cache   : Spring test ApplicationContext cache statistics: [DefaultContextCache@628f642d size = 1, maxSize = 32, parentContextCount = 0, hitCount = 49, missCount = 1]
+2026-03-14T23:42:06.577+08:00 DEBUG 47820 --- [           main] tractDirtiesContextTestExecutionListener : After test method: class [UserServiceTest], method [testCreateUser], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null]
+2026-03-14T23:42:06.577+08:00 DEBUG 47820 --- [           main] o.s.t.c.w.ServletTestExecutionListener   : Resetting RequestContextHolder for test class com.example.demo.UserServiceTest
+]]></system-out>
+  </testcase>
+  <testcase name="testDeleteUser" classname="com.example.demo.UserServiceTest" time="0.006">
+    <error message="could not prepare statement; SQL [select u1_0.id,u1_0.age,u1_0.created_at,u1_0.email,u1_0.updated_at,u1_0.username from User u1_0]" type="org.springframework.dao.InvalidDataAccessResourceUsageException">org.springframework.dao.InvalidDataAccessResourceUsageException: could not prepare statement; SQL [select u1_0.id,u1_0.age,u1_0.created_at,u1_0.email,u1_0.updated_at,u1_0.username from User u1_0]
+	at com.example.demo.UserServiceTest.setUp(UserServiceTest.java:31)
+Caused by: org.hibernate.exception.SQLGrammarException: could not prepare statement
+	at com.example.demo.UserServiceTest.setUp(UserServiceTest.java:31)
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: 
+Syntax error in SQL statement "select u1_0.id,u1_0.age,u1_0.created_at,u1_0.email,u1_0.updated_at,u1_0.username from [*]User u1_0"; expected "identifier"; SQL statement:
+select u1_0.id,u1_0.age,u1_0.created_at,u1_0.email,u1_0.updated_at,u1_0.username from User u1_0 [42001-214]
+	at com.example.demo.UserServiceTest.setUp(UserServiceTest.java:31)
+</error>
+    <system-out><![CDATA[2026-03-14T23:42:06.577+08:00 DEBUG 47820 --- [           main] org.springframework.test.context.cache   : Spring test ApplicationContext cache statistics: [DefaultContextCache@628f642d size = 1, maxSize = 32, parentContextCount = 0, hitCount = 50, missCount = 1]
+2026-03-14T23:42:06.577+08:00 DEBUG 47820 --- [           main] o.s.t.c.w.ServletTestExecutionListener   : Setting up MockHttpServletRequest, MockHttpServletResponse, ServletWebRequest, and RequestContextHolder for test class com.example.demo.UserServiceTest
+2026-03-14T23:42:06.577+08:00 DEBUG 47820 --- [           main] DependencyInjectionTestExecutionListener : Performing dependency injection for test class com.example.demo.UserServiceTest
+2026-03-14T23:42:06.579+08:00 DEBUG 47820 --- [           main] org.springframework.test.context.cache   : Spring test ApplicationContext cache statistics: [DefaultContextCache@628f642d size = 1, maxSize = 32, parentContextCount = 0, hitCount = 51, missCount = 1]
+2026-03-14T23:42:06.579+08:00 DEBUG 47820 --- [           main] org.springframework.test.context.cache   : Spring test ApplicationContext cache statistics: [DefaultContextCache@628f642d size = 1, maxSize = 32, parentContextCount = 0, hitCount = 52, missCount = 1]
+2026-03-14T23:42:06.579+08:00 DEBUG 47820 --- [           main] tractDirtiesContextTestExecutionListener : Before test method: class [UserServiceTest], method [testDeleteUser], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null]
+2026-03-14T23:42:06.579+08:00 DEBUG 47820 --- [           main] org.springframework.test.context.cache   : Spring test ApplicationContext cache statistics: [DefaultContextCache@628f642d size = 1, maxSize = 32, parentContextCount = 0, hitCount = 53, missCount = 1]
+2026-03-14T23:42:06.579+08:00 DEBUG 47820 --- [           main] org.springframework.test.context.cache   : Spring test ApplicationContext cache statistics: [DefaultContextCache@628f642d size = 1, maxSize = 32, parentContextCount = 0, hitCount = 54, missCount = 1]
+2026-03-14T23:42:06.582+08:00 DEBUG 47820 --- [           main] org.hibernate.SQL                        : select u1_0.id,u1_0.age,u1_0.created_at,u1_0.email,u1_0.updated_at,u1_0.username from User u1_0
+Hibernate: select u1_0.id,u1_0.age,u1_0.created_at,u1_0.email,u1_0.updated_at,u1_0.username from User u1_0
+2026-03-14T23:42:06.582+08:00  WARN 47820 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 42001, SQLState: 42001
+2026-03-14T23:42:06.582+08:00 ERROR 47820 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : Syntax error in SQL statement "select u1_0.id,u1_0.age,u1_0.created_at,u1_0.email,u1_0.updated_at,u1_0.username from [*]User u1_0"; expected "identifier"; SQL statement:
+select u1_0.id,u1_0.age,u1_0.created_at,u1_0.email,u1_0.updated_at,u1_0.username from User u1_0 [42001-214]
+2026-03-14T23:42:06.583+08:00 DEBUG 47820 --- [           main] org.springframework.test.context.cache   : Spring test ApplicationContext cache statistics: [DefaultContextCache@628f642d size = 1, maxSize = 32, parentContextCount = 0, hitCount = 55, missCount = 1]
+2026-03-14T23:42:06.584+08:00 DEBUG 47820 --- [           main] org.springframework.test.context.cache   : Spring test ApplicationContext cache statistics: [DefaultContextCache@628f642d size = 1, maxSize = 32, parentContextCount = 0, hitCount = 56, missCount = 1]
+2026-03-14T23:42:06.584+08:00 DEBUG 47820 --- [           main] org.springframework.test.context.cache   : Spring test ApplicationContext cache statistics: [DefaultContextCache@628f642d size = 1, maxSize = 32, parentContextCount = 0, hitCount = 57, missCount = 1]
+2026-03-14T23:42:06.584+08:00 DEBUG 47820 --- [           main] org.springframework.test.context.cache   : Spring test ApplicationContext cache statistics: [DefaultContextCache@628f642d size = 1, maxSize = 32, parentContextCount = 0, hitCount = 58, missCount = 1]
+2026-03-14T23:42:06.585+08:00 DEBUG 47820 --- [           main] org.springframework.test.context.cache   : Spring test ApplicationContext cache statistics: [DefaultContextCache@628f642d size = 1, maxSize = 32, parentContextCount = 0, hitCount = 59, missCount = 1]
+2026-03-14T23:42:06.585+08:00 DEBUG 47820 --- [           main] tractDirtiesContextTestExecutionListener : After test method: class [UserServiceTest], method [testDeleteUser], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null]
+2026-03-14T23:42:06.585+08:00 DEBUG 47820 --- [           main] o.s.t.c.w.ServletTestExecutionListener   : Resetting RequestContextHolder for test class com.example.demo.UserServiceTest
+]]></system-out>
+  </testcase>
+  <testcase name="testGetUserById" classname="com.example.demo.UserServiceTest" time="0.007">
+    <error message="could not prepare statement; SQL [select u1_0.id,u1_0.age,u1_0.created_at,u1_0.email,u1_0.updated_at,u1_0.username from User u1_0]" type="org.springframework.dao.InvalidDataAccessResourceUsageException">org.springframework.dao.InvalidDataAccessResourceUsageException: could not prepare statement; SQL [select u1_0.id,u1_0.age,u1_0.created_at,u1_0.email,u1_0.updated_at,u1_0.username from User u1_0]
+	at com.example.demo.UserServiceTest.setUp(UserServiceTest.java:31)
+Caused by: org.hibernate.exception.SQLGrammarException: could not prepare statement
+	at com.example.demo.UserServiceTest.setUp(UserServiceTest.java:31)
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: 
+Syntax error in SQL statement "select u1_0.id,u1_0.age,u1_0.created_at,u1_0.email,u1_0.updated_at,u1_0.username from [*]User u1_0"; expected "identifier"; SQL statement:
+select u1_0.id,u1_0.age,u1_0.created_at,u1_0.email,u1_0.updated_at,u1_0.username from User u1_0 [42001-214]
+	at com.example.demo.UserServiceTest.setUp(UserServiceTest.java:31)
+</error>
+    <system-out><![CDATA[2026-03-14T23:42:06.585+08:00 DEBUG 47820 --- [           main] org.springframework.test.context.cache   : Spring test ApplicationContext cache statistics: [DefaultContextCache@628f642d size = 1, maxSize = 32, parentContextCount = 0, hitCount = 60, missCount = 1]
+2026-03-14T23:42:06.585+08:00 DEBUG 47820 --- [           main] o.s.t.c.w.ServletTestExecutionListener   : Setting up MockHttpServletRequest, MockHttpServletResponse, ServletWebRequest, and RequestContextHolder for test class com.example.demo.UserServiceTest
+2026-03-14T23:42:06.586+08:00 DEBUG 47820 --- [           main] DependencyInjectionTestExecutionListener : Performing dependency injection for test class com.example.demo.UserServiceTest
+2026-03-14T23:42:06.586+08:00 DEBUG 47820 --- [           main] org.springframework.test.context.cache   : Spring test ApplicationContext cache statistics: [DefaultContextCache@628f642d size = 1, maxSize = 32, parentContextCount = 0, hitCount = 61, missCount = 1]
+2026-03-14T23:42:06.586+08:00 DEBUG 47820 --- [           main] org.springframework.test.context.cache   : Spring test ApplicationContext cache statistics: [DefaultContextCache@628f642d size = 1, maxSize = 32, parentContextCount = 0, hitCount = 62, missCount = 1]
+2026-03-14T23:42:06.587+08:00 DEBUG 47820 --- [           main] tractDirtiesContextTestExecutionListener : Before test method: class [UserServiceTest], method [testGetUserById], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null]
+2026-03-14T23:42:06.587+08:00 DEBUG 47820 --- [           main] org.springframework.test.context.cache   : Spring test ApplicationContext cache statistics: [DefaultContextCache@628f642d size = 1, maxSize = 32, parentContextCount = 0, hitCount = 63, missCount = 1]
+2026-03-14T23:42:06.587+08:00 DEBUG 47820 --- [           main] org.springframework.test.context.cache   : Spring test ApplicationContext cache statistics: [DefaultContextCache@628f642d size = 1, maxSize = 32, parentContextCount = 0, hitCount = 64, missCount = 1]
+2026-03-14T23:42:06.590+08:00 DEBUG 47820 --- [           main] org.hibernate.SQL                        : select u1_0.id,u1_0.age,u1_0.created_at,u1_0.email,u1_0.updated_at,u1_0.username from User u1_0
+Hibernate: select u1_0.id,u1_0.age,u1_0.created_at,u1_0.email,u1_0.updated_at,u1_0.username from User u1_0
+2026-03-14T23:42:06.590+08:00  WARN 47820 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 42001, SQLState: 42001
+2026-03-14T23:42:06.590+08:00 ERROR 47820 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : Syntax error in SQL statement "select u1_0.id,u1_0.age,u1_0.created_at,u1_0.email,u1_0.updated_at,u1_0.username from [*]User u1_0"; expected "identifier"; SQL statement:
+select u1_0.id,u1_0.age,u1_0.created_at,u1_0.email,u1_0.updated_at,u1_0.username from User u1_0 [42001-214]
+2026-03-14T23:42:06.591+08:00 DEBUG 47820 --- [           main] org.springframework.test.context.cache   : Spring test ApplicationContext cache statistics: [DefaultContextCache@628f642d size = 1, maxSize = 32, parentContextCount = 0, hitCount = 65, missCount = 1]
+2026-03-14T23:42:06.591+08:00 DEBUG 47820 --- [           main] org.springframework.test.context.cache   : Spring test ApplicationContext cache statistics: [DefaultContextCache@628f642d size = 1, maxSize = 32, parentContextCount = 0, hitCount = 66, missCount = 1]
+2026-03-14T23:42:06.591+08:00 DEBUG 47820 --- [           main] org.springframework.test.context.cache   : Spring test ApplicationContext cache statistics: [DefaultContextCache@628f642d size = 1, maxSize = 32, parentContextCount = 0, hitCount = 67, missCount = 1]
+2026-03-14T23:42:06.592+08:00 DEBUG 47820 --- [           main] org.springframework.test.context.cache   : Spring test ApplicationContext cache statistics: [DefaultContextCache@628f642d size = 1, maxSize = 32, parentContextCount = 0, hitCount = 68, missCount = 1]
+2026-03-14T23:42:06.593+08:00 DEBUG 47820 --- [           main] org.springframework.test.context.cache   : Spring test ApplicationContext cache statistics: [DefaultContextCache@628f642d size = 1, maxSize = 32, parentContextCount = 0, hitCount = 69, missCount = 1]
+2026-03-14T23:42:06.593+08:00 DEBUG 47820 --- [           main] tractDirtiesContextTestExecutionListener : After test method: class [UserServiceTest], method [testGetUserById], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null]
+2026-03-14T23:42:06.593+08:00 DEBUG 47820 --- [           main] o.s.t.c.w.ServletTestExecutionListener   : Resetting RequestContextHolder for test class com.example.demo.UserServiceTest
+]]></system-out>
+  </testcase>
+  <testcase name="testGetUserByIdNotFound" classname="com.example.demo.UserServiceTest" time="0.008">
+    <error message="could not prepare statement; SQL [select u1_0.id,u1_0.age,u1_0.created_at,u1_0.email,u1_0.updated_at,u1_0.username from User u1_0]" type="org.springframework.dao.InvalidDataAccessResourceUsageException">org.springframework.dao.InvalidDataAccessResourceUsageException: could not prepare statement; SQL [select u1_0.id,u1_0.age,u1_0.created_at,u1_0.email,u1_0.updated_at,u1_0.username from User u1_0]
+	at com.example.demo.UserServiceTest.setUp(UserServiceTest.java:31)
+Caused by: org.hibernate.exception.SQLGrammarException: could not prepare statement
+	at com.example.demo.UserServiceTest.setUp(UserServiceTest.java:31)
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: 
+Syntax error in SQL statement "select u1_0.id,u1_0.age,u1_0.created_at,u1_0.email,u1_0.updated_at,u1_0.username from [*]User u1_0"; expected "identifier"; SQL statement:
+select u1_0.id,u1_0.age,u1_0.created_at,u1_0.email,u1_0.updated_at,u1_0.username from User u1_0 [42001-214]
+	at com.example.demo.UserServiceTest.setUp(UserServiceTest.java:31)
+</error>
+    <system-out><![CDATA[2026-03-14T23:42:06.594+08:00 DEBUG 47820 --- [           main] org.springframework.test.context.cache   : Spring test ApplicationContext cache statistics: [DefaultContextCache@628f642d size = 1, maxSize = 32, parentContextCount = 0, hitCount = 70, missCount = 1]
+2026-03-14T23:42:06.595+08:00 DEBUG 47820 --- [           main] o.s.t.c.w.ServletTestExecutionListener   : Setting up MockHttpServletRequest, MockHttpServletResponse, ServletWebRequest, and RequestContextHolder for test class com.example.demo.UserServiceTest
+2026-03-14T23:42:06.595+08:00 DEBUG 47820 --- [           main] DependencyInjectionTestExecutionListener : Performing dependency injection for test class com.example.demo.UserServiceTest
+2026-03-14T23:42:06.595+08:00 DEBUG 47820 --- [           main] org.springframework.test.context.cache   : Spring test ApplicationContext cache statistics: [DefaultContextCache@628f642d size = 1, maxSize = 32, parentContextCount = 0, hitCount = 71, missCount = 1]
+2026-03-14T23:42:06.596+08:00 DEBUG 47820 --- [           main] org.springframework.test.context.cache   : Spring test ApplicationContext cache statistics: [DefaultContextCache@628f642d size = 1, maxSize = 32, parentContextCount = 0, hitCount = 72, missCount = 1]
+2026-03-14T23:42:06.596+08:00 DEBUG 47820 --- [           main] tractDirtiesContextTestExecutionListener : Before test method: class [UserServiceTest], method [testGetUserByIdNotFound], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null]
+2026-03-14T23:42:06.597+08:00 DEBUG 47820 --- [           main] org.springframework.test.context.cache   : Spring test ApplicationContext cache statistics: [DefaultContextCache@628f642d size = 1, maxSize = 32, parentContextCount = 0, hitCount = 73, missCount = 1]
+2026-03-14T23:42:06.597+08:00 DEBUG 47820 --- [           main] org.springframework.test.context.cache   : Spring test ApplicationContext cache statistics: [DefaultContextCache@628f642d size = 1, maxSize = 32, parentContextCount = 0, hitCount = 74, missCount = 1]
+2026-03-14T23:42:06.599+08:00 DEBUG 47820 --- [           main] org.hibernate.SQL                        : select u1_0.id,u1_0.age,u1_0.created_at,u1_0.email,u1_0.updated_at,u1_0.username from User u1_0
+Hibernate: select u1_0.id,u1_0.age,u1_0.created_at,u1_0.email,u1_0.updated_at,u1_0.username from User u1_0
+2026-03-14T23:42:06.599+08:00  WARN 47820 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 42001, SQLState: 42001
+2026-03-14T23:42:06.600+08:00 ERROR 47820 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : Syntax error in SQL statement "select u1_0.id,u1_0.age,u1_0.created_at,u1_0.email,u1_0.updated_at,u1_0.username from [*]User u1_0"; expected "identifier"; SQL statement:
+select u1_0.id,u1_0.age,u1_0.created_at,u1_0.email,u1_0.updated_at,u1_0.username from User u1_0 [42001-214]
+2026-03-14T23:42:06.600+08:00 DEBUG 47820 --- [           main] org.springframework.test.context.cache   : Spring test ApplicationContext cache statistics: [DefaultContextCache@628f642d size = 1, maxSize = 32, parentContextCount = 0, hitCount = 75, missCount = 1]
+2026-03-14T23:42:06.601+08:00 DEBUG 47820 --- [           main] org.springframework.test.context.cache   : Spring test ApplicationContext cache statistics: [DefaultContextCache@628f642d size = 1, maxSize = 32, parentContextCount = 0, hitCount = 76, missCount = 1]
+2026-03-14T23:42:06.601+08:00 DEBUG 47820 --- [           main] org.springframework.test.context.cache   : Spring test ApplicationContext cache statistics: [DefaultContextCache@628f642d size = 1, maxSize = 32, parentContextCount = 0, hitCount = 77, missCount = 1]
+2026-03-14T23:42:06.602+08:00 DEBUG 47820 --- [           main] org.springframework.test.context.cache   : Spring test ApplicationContext cache statistics: [DefaultContextCache@628f642d size = 1, maxSize = 32, parentContextCount = 0, hitCount = 78, missCount = 1]
+2026-03-14T23:42:06.603+08:00 DEBUG 47820 --- [           main] org.springframework.test.context.cache   : Spring test ApplicationContext cache statistics: [DefaultContextCache@628f642d size = 1, maxSize = 32, parentContextCount = 0, hitCount = 79, missCount = 1]
+2026-03-14T23:42:06.603+08:00 DEBUG 47820 --- [           main] tractDirtiesContextTestExecutionListener : After test method: class [UserServiceTest], method [testGetUserByIdNotFound], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null]
+2026-03-14T23:42:06.603+08:00 DEBUG 47820 --- [           main] o.s.t.c.w.ServletTestExecutionListener   : Resetting RequestContextHolder for test class com.example.demo.UserServiceTest
+]]></system-out>
+  </testcase>
+</testsuite>
